@@ -332,6 +332,7 @@ body {
   width: fit-content;
   left: unset;
   height: fit-content;
+  background-color: #fff;
 }
 .progress_wrap_inner .carousel .carousel-indicators li {
   background-color: #d8d8d8;
