@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ic_check_box_outline_blank</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.1944444,0.0832932685 L1.47222222,0.0832932685 C0.701388889,0.0832932685 0.0833333333,0.708281249 0.0833333333,1.47215545 L0.0833333333,11.1941907 C0.0833333333,11.9580649 0.701388889,12.5830529 1.47222222,12.5830529 L11.1944444,12.5830529 C11.9652778,12.5830529 12.5833333,11.9580649 12.5833333,11.1941907 L12.5833333,1.47215545 C12.5833333,0.708281249 11.9652778,0.0832932685 11.1944444,0.0832932685 L11.1944444,0.0832932685 Z M4.94444444,9.80532852 L1.47222222,6.33317307 L2.45138889,5.35402524 L4.94444444,7.84008854 L10.2152778,2.56935657 L11.1944444,3.55544872 L4.94444444,9.80532852 L4.94444444,9.80532852 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CS_Candidate2020_Filter" transform="translate(-123.000000, -332.000000)">
+            <g id="Group-26" transform="translate(23.000000, 300.000000)">
+                <g id="ic_check_box_outline_blank" transform="translate(100.641613, 32.056106)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#0A7BE0" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

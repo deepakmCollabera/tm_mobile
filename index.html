@@ -1,0 +1,567 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <title>Mobile Webapp</title>
+</head>
+
+<body>
+  <div class="dashboard_wrapper">
+    <div class="top_navbar">
+      <div class="nav_logo">
+        <span><img src="./images/logo.svg" alt="logo"> Dashboard</span>
+      </div>
+      <div class="nav_list ml-auto">
+        <ul>
+          <li class="profile_status_slide" data-index="0">
+            <span><img src="./images/profile_status.svg" alt="profile_status"></span>
+          </li>
+          <li class="assessment_completion_slide" data-index="1">
+            <span><img src="./images/assessment_completion.svg" alt="assessment_completion"></span>
+          </li>
+          <li>
+            <span><img src="./images/notification.svg" alt="notification"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom_nav">
+      <ul>
+        <li class="active">
+          <a href="#">
+            <svg width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="TAL_Home" transform="translate(-33.000000, -968.000000)" fill="#747588" fill-rule="nonzero">
+                  <g id="Group-12" transform="translate(0.000000, 948.000000)">
+                    <g id="Group-9">
+                      <g id="noun_Home_1560062" transform="translate(33.000000, 20.000000)">
+                        <path
+                          d="M12.422573,7.27272728e-05 C12.2364488,0.00340606061 12.0474276,0.0697181818 11.8638609,0.189466667 L0.348709394,9.28037576 C0.0529034545,9.57409697 -0.15504503,10.2065212 0.149845879,10.5966727 C0.454733636,10.9868242 1.09596394,11.0391576 1.46613364,10.7103091 L12.422573,2.06446667 L23.3790124,10.7103091 C23.7491821,11.0391576 24.4039306,10.9970061 24.6953003,10.5966727 C24.9509579,10.2453697 24.888067,9.57318788 24.4964367,9.28037576 L12.9812852,0.189466667 C12.7919245,0.0564 12.6086973,-0.00325757576 12.422573,7.27272728e-05 Z M5.14984576,8.87317879 L3.33166424,10.3125818 L3.33166424,19.0909758 C3.33166424,19.593032 3.7386989,20.0000667 4.24075515,20.0000667 L9.99833061,20.0000667 C10.5003869,20.0000667 10.9073713,19.593032 10.9074215,19.0909758 L10.9074215,15.4546121 C10.9074215,14.5994909 11.5674548,13.9394606 12.422573,13.9394606 C13.2776912,13.9394606 13.9377245,14.5994909 13.9377245,15.4546121 L13.9377245,19.0909758 C13.9377747,19.593032 14.3447592,20.0000667 14.8468155,20.0000667 L20.6043912,20.0000667 C21.1064475,20.0000667 21.5134821,19.593032 21.5134821,19.0909758 L21.5134821,10.3125818 L19.6953003,8.87317879 L19.6953003,18.1818848 L15.7559064,18.1818848 L15.7559064,15.4546121 C15.7559064,13.6236727 14.2535155,12.1212788 12.422573,12.1212788 C10.5916306,12.1212788 9.0892397,13.6236727 9.0892397,15.4546121 L9.0892397,18.1818848 L5.14984576,18.1818848 L5.14984576,8.87317879 L5.14984576,8.87317879 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="TAL_Home" transform="translate(-117.000000, -967.000000)" fill="#747588" fill-rule="nonzero"
+                  stroke="#FFFFFF" stroke-width="0.5">
+                  <g id="Group-12" transform="translate(0.000000, 948.000000)">
+                    <g id="Group-9">
+                      <g id="noun_Search_1080246" transform="translate(118.000000, 20.000000)">
+                        <path
+                          d="M19.5653061,17.8357143 L15.0014286,13.2712245 C17.3846939,10.0393878 17.104898,5.40183673 14.2028571,2.5 C12.6393878,0.937142857 10.5612245,0.0763265306 8.35102041,0.0763265306 C6.14061224,0.0763265306 4.06265306,0.937142857 2.50020408,2.5 C0.937142857,4.06326531 0.0763265306,6.14102041 0.0763265306,8.35102041 C0.0763265306,10.5612245 0.937142857,12.6391837 2.50020408,14.2026531 C4.06285714,15.7657143 6.14081633,16.6265306 8.35142857,16.6265306 C10.1404082,16.6265306 11.854898,16.0557143 13.2728571,15.0028571 L17.8357143,19.564898 C18.0667347,19.7961224 18.3738776,19.9232653 18.7004082,19.9232653 C19.0279592,19.9232653 19.3357143,19.7953061 19.5640816,19.5659184 C19.7955102,19.335102 19.9230612,19.0279592 19.9232656,18.7010204 C19.9234694,18.3740816 19.7963265,18.0667347 19.5653061,17.8357143 Z M8.35102041,2.5222449 C9.9077551,2.5222449 11.3714286,3.12857143 12.4726531,4.22979592 C13.5716327,5.32857143 14.1769388,6.7922449 14.1769388,8.35102041 C14.1769388,9.90979592 13.5716327,11.3736735 12.472449,12.4726531 C11.3716327,13.5736735 9.90795918,14.18 8.35102041,14.18 C6.79428571,14.18 5.33061224,13.5736735 4.22938776,12.4726531 C3.12836735,11.3720408 2.52204082,9.90836735 2.52204082,8.35102041 C2.52204082,6.79428571 3.12836735,5.33061224 4.22938776,4.22979592 C5.33081633,3.12877551 6.7944898,2.5222449 8.35102041,2.5222449 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="TAL_Home" transform="translate(-198.000000, -967.000000)" fill="#747588" fill-rule="nonzero">
+                  <g id="Group-12" transform="translate(0.000000, 948.000000)">
+                    <g id="Group-9">
+                      <g id="noun_Star_2157383" transform="translate(198.000000, 19.000000)">
+                        <path
+                          d="M10.9770833,18.425 C11.34375,18.425 11.6645833,18.7458333 11.6645833,19.1125 L11.6645833,19.1125 L11.6645833,21.175 C11.6645833,21.5416667 11.34375,21.8625 10.9770833,21.8625 C10.6104167,21.8625 10.2895833,21.5645833 10.2895833,21.175 L10.2895833,21.175 L10.2895833,19.1125 C10.2895833,18.7458333 10.5875,18.425 10.9770833,18.425 Z M16.225,16.2708333 C16.5,15.9958333 16.9354167,15.9958333 17.2104167,16.2708333 L17.2104167,16.2708333 L18.6541667,17.7375 C18.9291667,18.0125 18.9291667,18.4479167 18.6541667,18.7229167 C18.5166667,18.8604167 18.3333333,18.9291667 18.1729167,18.9291667 C18.0125,18.9291667 17.8291667,18.8604167 17.6916667,18.7229167 L17.6916667,18.7229167 L16.225,17.25625 C15.95,16.98125 15.95,16.5458333 16.225,16.2708333 Z M4.74375,16.225 C5.01875,15.9729167 5.45416667,15.9729167 5.70625,16.225 C5.98125,16.5 5.98125,16.9354167 5.70625,17.2104167 L5.70625,17.2104167 L4.23958333,18.6770833 C4.10208333,18.8145833 3.91875,18.8833333 3.75833333,18.8833333 C3.59791667,18.8833333 3.41458333,18.8145833 3.27708333,18.6770833 C3.00208333,18.4020833 3.00208333,17.9666667 3.27708333,17.6916667 L3.27708333,17.6916667 Z M10.45,6.23333333 C10.65625,5.72916667 11.3895833,5.72916667 11.5958333,6.23333333 L11.5958333,6.23333333 L12.58125,8.59375 C12.6729167,8.82291667 12.8791667,8.96041667 13.1083333,8.98333333 L13.1083333,8.98333333 L15.6520833,9.18958333 C16.2020833,9.23541667 16.4083333,9.92291667 15.9958333,10.2895833 L15.9958333,10.2895833 L14.0479167,11.9625 C13.8645833,12.1229167 13.7958333,12.3520833 13.8416667,12.58125 L13.8416667,12.58125 L14.4375,15.05625 C14.575,15.5833333 14.0020833,16.01875 13.5208333,15.7208333 L13.5208333,15.7208333 L11.34375,14.3916667 C11.1604167,14.2770833 10.9083333,14.2770833 10.7020833,14.3916667 L10.7020833,14.3916667 L8.525,15.7208333 C8.06666667,16.01875 7.47083333,15.5833333 7.60833333,15.05625 L7.60833333,15.05625 L8.20416667,12.58125 C8.25,12.3520833 8.18125,12.1229167 7.99791667,11.9625 L7.99791667,11.9625 L6.07291667,10.3125 C5.6375,9.94583333 5.86666667,9.25833333 6.41666667,9.2125 L6.41666667,9.2125 L8.9375,8.98333333 C9.16666667,8.96041667 9.37291667,8.8 9.46458333,8.59375 L9.46458333,8.59375 Z M21.1979167,10.3354167 C21.5645833,10.3354167 21.8854167,10.65625 21.8854167,11.0229167 C21.8854167,11.3895833 21.5875,11.7104167 21.1979167,11.7104167 L21.1979167,11.7104167 L19.1354167,11.7104167 C18.76875,11.7104167 18.4479167,11.3895833 18.4479167,11.0229167 C18.4479167,10.65625 18.7458333,10.3354167 19.1354167,10.3354167 L19.1354167,10.3354167 Z M2.8875,10.2895833 C3.25416667,10.2895833 3.575,10.5875 3.575,10.9770833 C3.575,11.34375 3.25416667,11.6645833 2.8875,11.6645833 L2.8875,11.6645833 L0.825,11.6645833 C0.458333333,11.6645833 0.1375,11.3666667 0.1375,10.9770833 C0.1375,10.5875 0.435416667,10.2895833 0.825,10.2895833 L0.825,10.2895833 Z M17.7145833,3.3 C17.9895833,3.025 18.425,3.025 18.7,3.3 C18.975,3.575 18.975,4.01041667 18.7,4.28541667 L18.7,4.28541667 L17.2333333,5.75208333 C17.0958333,5.88958333 16.9354167,5.95833333 16.7520833,5.95833333 C16.5916667,5.95833333 16.4083333,5.9125 16.2708333,5.775 C15.9958333,5.5 15.9958333,5.06458333 16.2708333,4.78958333 L16.2708333,4.78958333 Z M3.3,3.27708333 C3.575,3.00208333 4.01041667,3.00208333 4.28541667,3.27708333 L4.28541667,3.27708333 L5.75208333,4.74375 C6.02708333,5.01875 6.02708333,5.45416667 5.75208333,5.72916667 C5.61458333,5.86666667 5.45416667,5.93541667 5.27083333,5.93541667 C5.11041667,5.93541667 4.92708333,5.86666667 4.78958333,5.72916667 L4.78958333,5.72916667 L3.3,4.2625 C3.025,3.9875 3.025,3.55208333 3.3,3.27708333 Z M11.0229167,0.1375 C11.3895833,0.1375 11.7104167,0.435416667 11.7104167,0.825 L11.7104167,0.825 L11.7104167,2.8875 C11.7104167,3.25416667 11.4125,3.575 11.0229167,3.575 C10.65625,3.575 10.3354167,3.25416667 10.3354167,2.8875 L10.3354167,2.8875 L10.3354167,0.825 C10.3354167,0.458333333 10.65625,0.1375 11.0229167,0.1375 Z"
+                          id="Combined-Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="TAL_Home" transform="translate(-280.000000, -968.000000)" fill="#747588" fill-rule="nonzero">
+                  <g id="Group-12" transform="translate(0.000000, 948.000000)">
+                    <g id="Group-9">
+                      <g id="noun_Luggage_491989" transform="translate(280.000000, 20.000000)">
+                        <path
+                          d="M6.62878788,17.9924242 C7.1517848,17.9924242 7.57575758,18.416397 7.57575758,18.9393939 C7.57575758,19.4623909 7.1517848,19.8863636 6.62878788,19.8863636 C6.10579096,19.8863636 5.68181818,19.4623909 5.68181818,18.9393939 C5.68181818,18.416397 6.10579096,17.9924242 6.62878788,17.9924242 Z M21.780303,17.9924242 C22.3033,17.9924242 22.7272727,18.416397 22.7272727,18.9393939 C22.7272727,19.4623909 22.3033,19.8863636 21.780303,19.8863636 C21.2573061,19.8863636 20.8333333,19.4623909 20.8333333,18.9393939 C20.8333333,18.416397 21.2573061,17.9924242 21.780303,17.9924242 Z M0.946969697,1.45483625e-12 C3.03551136,1.45483625e-12 4.73484848,1.69933712 4.73484848,3.78787879 L4.73484848,3.78787879 L4.73484848,14.2045455 C4.73484848,14.7267992 5.15956439,15.1515152 5.68181818,15.1515152 L5.68181818,15.1515152 L23.6742424,15.1515152 C24.1969697,15.1515152 24.6212121,15.5757576 24.6212121,16.0984848 C24.6212121,16.6212121 24.1969697,17.0454545 23.6742424,17.0454545 L23.6742424,17.0454545 L5.68181818,17.0454545 C4.11505682,17.0454545 2.84090909,15.7713068 2.84090909,14.2045455 L2.84090909,14.2045455 L2.84090909,3.78787879 C2.84090909,2.74337121 1.99147727,1.89393939 0.946969697,1.89393939 C0.424242424,1.89393939 -3.85469434e-13,1.46969697 -3.85469434e-13,0.946969697 C-3.85469434e-13,0.424242424 0.424242424,1.45483625e-12 0.946969697,1.45483625e-12 Z M16.0984848,1.89393939 C16.6212121,1.89393939 17.0454545,2.31818182 17.0454545,2.84090909 L17.0454545,2.84090909 L17.0454545,4.73484848 L20.8333333,4.73484848 C21.3560606,4.73484848 21.780303,5.15909091 21.780303,5.68181818 L21.780303,5.68181818 L21.780303,13.2575758 C21.780303,13.780303 21.3560606,14.2045455 20.8333333,14.2045455 L20.8333333,14.2045455 L7.57575758,14.2045455 C7.0530303,14.2045455 6.62878788,13.780303 6.62878788,13.2575758 L6.62878788,13.2575758 L6.62878788,5.68181818 C6.62878788,5.15909091 7.0530303,4.73484848 7.57575758,4.73484848 L7.57575758,4.73484848 L11.3636364,4.73484848 L11.3636364,2.84090909 C11.3636364,2.31818182 11.7878788,1.89393939 12.3106061,1.89393939 L12.3106061,1.89393939 Z M15.1515152,3.78787879 L13.2575758,3.78787879 L13.2575758,4.73484848 L15.1515152,4.73484848 L15.1515152,3.78787879 Z"
+                          id="Combined-Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="TAL_Home" transform="translate(-365.000000, -970.000000)" fill="#747588" fill-rule="nonzero">
+                  <g id="Group-12" transform="translate(0.000000, 948.000000)">
+                    <g id="Group-9">
+                      <g id="noun_menu_629469" transform="translate(365.000000, 22.000000)">
+                        <path
+                          d="M16.6984615,13.6205128 C17.3076923,13.6205128 17.8061538,14.1128205 17.8061538,14.7145299 C17.8061538,15.3162393 17.3076923,15.808547 16.6984615,15.808547 L16.6984615,15.808547 L1.27384615,15.808547 C0.664615385,15.808547 0.166153846,15.3162393 0.166153846,14.7145299 C0.166153846,14.1128205 0.664615385,13.6205128 1.27384615,13.6205128 L1.27384615,13.6205128 Z M16.6984615,6.83760684 C17.3076923,6.83760684 17.8061538,7.32991453 17.8061538,7.93162393 C17.8061538,8.53333333 17.3076923,9.02564103 16.6984615,9.02564103 L16.6984615,9.02564103 L1.27384615,9.02564103 C0.664615385,9.02564103 0.166153846,8.53333333 0.166153846,7.93162393 C0.166153846,7.32991453 0.664615385,6.83760684 1.27384615,6.83760684 L1.27384615,6.83760684 Z M16.6984615,0.0273504273 C17.3076923,0.0273504273 17.8061538,0.51965812 17.8061538,1.12136752 C17.8061538,1.72307692 17.3076923,2.21538462 16.6984615,2.21538462 L16.6984615,2.21538462 L1.27384615,2.21538462 C0.664615385,2.21538462 0.166153846,1.72307692 0.166153846,1.12136752 C0.166153846,0.51965812 0.664615385,0.0273504273 1.27384615,0.0273504273 L1.27384615,0.0273504273 Z"
+                          id="Combined-Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="progress_wrap">
+      <div class="progress_wrap_inner">
+        <div id="progress_wrap_carousel" class="carousel slide" data-interval="false" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#progress_wrap_carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#progress_wrap_carousel" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item first_slide active">
+              <div class="row m-0">
+                <div class="col-12 px-0">
+                  <h4>Profile Status <span class="pl-2"><img src="./images/info_icon.svg" alt="info_icon" /></span></h4>
+                </div>
+                <div class="col-6 pl-0 pr-2">
+                  <div class="meter_wrap">
+                    <img src="./images/meter_bg.svg" alt="meter_bg" class="meter_bg">
+                    <img src="./images/needle_main.svg" alt="needle" class="needle" style="transform: rotate(411deg);">
+                    <div class="percNum">
+                      <span>79%</span>
+                    </div>
+                    <span class="zero_wrap">0%</span>
+                    <span class="hundread_wrap">100%</span>
+                  </div>
+                </div>
+                <div class="col-6 pl-2 pr-0 profile_status_desc">
+                  <h5>Hi Kevin,</h5>
+                  <p>Strong Profile will increase your hiring chances</p>
+                  <button class="btn_primary">Update Profile</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item second_slide">
+              <div class="row m-0">
+                <div class="col-12 px-0">
+                  <h4>Assessment Completions <span class="pl-2"><img src="./images/info_icon.svg"
+                        alt="info_icon" /></span></h4>
+                </div>
+                <div class="col-6 pl-0 pr-2">
+                  <div class="chart_wrap">
+                    <div id="piechart">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 pl-2 pr-0 chart_legends_wrap">
+                  <ul>
+                    <li class="pending">
+                      Pending(4)
+                    </li>
+                    <li class="completed">
+                      Completed (3)
+                    </li>
+                    <li class="inprogress">
+                      In Progress (1)
+                    </li>
+                  </ul>
+                  <button class="btn_primary mt-2">Browse Assessments</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quick_actions_wrap">
+      <div class="quick_actions_inner">
+        <h4>Quick Actions</h4>
+        <div class="quick_actions_list my-3">
+          <ul>
+            <li>
+              <h5>12</h5>
+              <p>Shortlisted</p>
+            </li>
+            <li>
+              <h5>9</h5>
+              <p>Applied</p>
+            </li>
+            <li>
+              <h5>5</h5>
+              <p>Interviewing</p>
+            </li>
+            <li>
+              <h5>2</h5>
+              <p>Finalist</p>
+            </li>
+          </ul>
+        </div>
+        <form action="">
+          <div class="form_group mb-2">
+            <input type="text" placeholder="Job Skills">
+          </div>
+          <div class="form_group mb-3">
+            <div class="input_check_wrap">
+              <input type="text" placeholder="Location" />
+              <div class="checkbox_wrap d-flex my-3">
+                <input type="checkbox" id="all_us_loc" width="20px" class="d-none">
+                <div class="checkbox_wrap_img mr-1"></div>
+                <label for="all_us_loc" class="mb-0">All US Locations</label>
+              </div>
+            </div>
+          </div>
+          <button class="btn_primary w-100 py-2"><span><img src="./images/search_icon.svg" alt="search_icon" /></span>
+            Find Jobs</button>
+        </form>
+      </div>
+    </div>
+    <div class="jobs_list_wrap">
+      <div class="jobs_list_head">
+        <h4>Matching Jobs</h4>
+        <div class="filter_by">
+          <span><img src="./images/noun_filters_2161054.svg" alt="noun_filters_2161054" class="mr-1"></span>
+          Filter By <span><img src="./images/filter_arrow.svg" width="8" alt="filter_arrow"></span>
+        </div>
+      </div>
+      <div class="jobs_list_inner mt-3">
+        <div class="job_card_wrap">
+          <div class="row m-0">
+            <div class="col-8 px-0">
+              <div class="row m-0">
+                <div class="card_logo">
+                  <img src="./images/card_logo.png" alt="card_logo">
+                </div>
+                <div class="card_head pl-2">
+                  <h6>UX Designer</h6>
+                  <h5>Microsoft</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 px-0">
+              <span class="hrs_tag">4 hrs</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <span class="tag_info">3-4 yrs Exp.</span>
+              <span class="tag_info">$56/hr</span>
+              <span class="tag_info">Manhattan, NY</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <p class="card_desc">
+                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+                world's
+              </p>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <div class="align-items-center">
+                <span class="match_tag">90% Match</span>
+                <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
+                <span class="applied_tag">27 Applied</span>
+              </div>
+            </div>
+            <div class="d-flex w-100 align-items-center">
+              <div class="col-7 pt-1 px-0">
+                <div class="contact_wrap">
+                  Contact: <span>John Trivolli</span>
+                </div>
+              </div>
+              <div class="col-5 pt-1 px-0 text-right">
+                <button class="btn_secondary mr-1">
+                  Shortlist
+                </button>
+                <button class="btn_primary">
+                  Apply
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="job_card_wrap">
+          <div class="row m-0">
+            <div class="col-8 px-0">
+              <div class="row m-0">
+                <div class="card_logo">
+                  <img src="./images/card_logo.png" alt="card_logo">
+                </div>
+                <div class="card_head pl-2">
+                  <h6>UX Designer</h6>
+                  <h5>Microsoft</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 px-0">
+              <span class="hrs_tag">4 hrs</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <span class="tag_info">3-4 yrs Exp.</span>
+              <span class="tag_info">$56/hr</span>
+              <span class="tag_info">Manhattan, NY</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <p class="card_desc">
+                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+                world's
+              </p>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <div class="align-items-center">
+                <span class="match_tag">90% Match</span>
+                <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
+                <span class="applied_tag">27 Applied</span>
+              </div>
+            </div>
+            <div class="d-flex w-100 align-items-center">
+              <div class="col-7 pt-1 px-0">
+                <div class="contact_wrap">
+                  Contact: <span>John Trivolli</span>
+                </div>
+              </div>
+              <div class="col-5 pt-1 px-0 text-right">
+                <button class="btn_secondary mr-1">
+                  Shortlist
+                </button>
+                <button class="btn_primary">
+                  Apply
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="job_card_wrap">
+          <div class="row m-0">
+            <div class="col-8 px-0">
+              <div class="row m-0">
+                <div class="card_logo">
+                  <img src="./images/card_logo.png" alt="card_logo">
+                </div>
+                <div class="card_head pl-2">
+                  <h6>UX Designer</h6>
+                  <h5>Microsoft</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 px-0">
+              <span class="hrs_tag">4 hrs</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <span class="tag_info">3-4 yrs Exp.</span>
+              <span class="tag_info">$56/hr</span>
+              <span class="tag_info">Manhattan, NY</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <p class="card_desc">
+                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+                world's
+              </p>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <div class="align-items-center">
+                <span class="match_tag">90% Match</span>
+                <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
+                <span class="applied_tag">27 Applied</span>
+              </div>
+            </div>
+            <div class="d-flex w-100 align-items-center">
+              <div class="col-7 pt-1 px-0">
+                <div class="contact_wrap">
+                  Contact: <span>John Trivolli</span>
+                </div>
+              </div>
+              <div class="col-5 pt-1 px-0 text-right">
+                <button class="btn_secondary mr-1">
+                  Shortlist
+                </button>
+                <button class="btn_primary">
+                  Apply
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="job_modal_view">
+    <div class="job_modal_view_inner">
+      <span class="close_job_modal">&times;</span>
+      <div class="job_card_wrap mt-0">
+        <div class="row m-0">
+          <div class="col-8 px-0">
+            <div class="row m-0">
+              <div class="card_logo">
+                <img src="./images/card_logo.png" alt="card_logo">
+              </div>
+              <div class="card_head pl-2">
+                <h6>UX Designer</h6>
+                <h5>Microsoft</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 px-0">
+            <span class="hrs_tag">4 hrs</span>
+          </div>
+          <div class="col-12 pt-1 px-0">
+            <span class="tag_info">3-4 yrs Exp.</span>
+            <span class="tag_info">$56/hr</span>
+            <span class="tag_info">Manhattan, NY</span>
+          </div>
+          <div class="col-12 pt-1 px-0">
+            <p class="card_desc">
+              Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+              world's
+            </p>
+          </div>
+          <div class="col-12 pt-1 px-0">
+            <div class="align-items-center">
+              <span class="match_tag">90% Match</span>
+              <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
+              <span class="applied_tag">27 Applied</span>
+            </div>
+          </div>
+          <div class="d-flex w-100 align-items-center">
+            <div class="col-7 pt-1 px-0">
+
+            </div>
+            <div class="col-5 pt-1 px-0 text-right">
+              <button class="btn_secondary mr-1">
+                Shortlist
+              </button>
+              <button class="btn_primary">
+                Apply
+              </button>
+            </div>
+          </div>
+          <div class="col-12 px-0 job_contact_wrap">
+            <h5>Contact Info</h5>
+            <hr>
+            <h3>Lance Lewis</h3>
+            <p>Project Manager - Digital Transformation</p>
+            <a href=""><span><img src="./images/phone_num.svg" alt="phone_num"></span> +302-990-0013</a>
+            <a href=""><span><img src="./images/noun_Email_740627.svg" alt="mail_icon"></span> lance.lewis @ microsoft.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+  $(document).ready(function () {
+    var pPos = 89;
+    var pEarned = 65;
+    var addThisDefault = 270;
+    var percNumb = ((pEarned / pPos) * 100).toFixed(3);
+    var percCss = ((pEarned / pPos) * 180).toFixed(3);
+    $(".percNum span").text(Math.round(percNumb) + "%");
+    $(".needle").css("transform", "rotate(" + Math.round(parseInt(270) + parseInt(percCss)) + "deg)");
+
+
+    // Load google charts
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Pending', 4],
+        ['In Progress', 1],
+        ['Completed', 3]
+      ]);
+
+      // Optional; add a title and set the width and height of the chart
+      var options = { 'width': 133, 'height': 104, 'colors': ['#FF5D5D', '#F0BE17', '#3CD991'], 'chartArea': { left: 0, top: 0, width: 133, height: 100 }, 'pieStartAngle': 50, 'legend': { position: 'none' } };
+
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+
+      $("#navbarDropdownMenuLink").on("click", function () {
+        $(this).siblings(".profile_menu").toggleClass("d-none");
+      });
+    }
+
+    $('#progress_wrap_carousel').bind('slide.bs.carousel', function (e) {
+      $(".progress_wrap").toggleClass("slided");
+    });
+
+    $('.profile_status_slide').on('click', function () {
+      if ($(this).hasClass("hided")) {
+        $(this).removeClass("hided");
+        $('.progress_wrap').show();
+        setTimeout(function () {
+          $('#progress_wrap_carousel').carousel(0);
+        }, 100)
+      } else {
+        if ($(".first_slide").hasClass("active")) {
+          $('.progress_wrap').hide();
+          $(this).addClass("hided");
+          $(".assessment_completion_slide").addClass("hided");
+        } else {
+          setTimeout(function () {
+            $('#progress_wrap_carousel').carousel(0);
+          }, 100)
+        }
+      }
+    })
+    $('.assessment_completion_slide').on('click', function () {
+      if ($(this).hasClass("hided")) {
+        $(this).removeClass("hided");
+        $('.progress_wrap').show();
+        setTimeout(function () {
+          $('#progress_wrap_carousel').carousel(1);
+        }, 100)
+      } else {
+        if ($(".second_slide").hasClass("active")) {
+          $('.progress_wrap').hide();
+          $(this).addClass("hided");
+          $(".profile_status_slide").addClass("hided");
+        } else {
+          setTimeout(function () {
+            $('#progress_wrap_carousel').carousel(1);
+          }, 100)
+        }
+      }
+    })
+
+    $(".contact_wrap").on("click", function(){
+      $(".job_modal_view").show();
+    })
+    $(".close_job_modal").on("click", function(){
+      $(".job_modal_view").hide();
+    })
+  })
+
+</script>
+
+</html>

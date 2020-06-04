@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="7px" viewBox="0 0 13 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TAL_ContactInfo_Overlay" transform="translate(-33.000000, -469.000000)" fill="#0080FF" fill-rule="nonzero">
+            <path d="M45.9584,469 L39.4896,472.470588 L33.0416,469 C33.0208,469.078431 33,469.156863 33,469.235294 L33,475.019608 C33,475.568627 33.4576,476 34.04,476 L44.96,476 C45.5424,476 46,475.568627 46,475.019608 L46,469.235294 C46,469.156863 45.9792,469.078431 45.9584,469 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
