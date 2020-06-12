@@ -8,48 +8,18 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/mdb.min.css">
-  <title>Dashboard</title>
+  <title>My Jobs</title>
 </head>
 
 <body>
-  <div class="dashboard_wrapper">
+  <div class="myjobs_wrapper">
     <div class="top_navbar">
       <div class="nav_logo">
-        <span><img src="./images/logo.svg" alt="logo"> Dashboard</span>
+        <span><img src="./images/logo.svg" alt="logo"> My Jobs</span>
       </div>
       <div class="nav_list ml-auto">
         <ul>
-          <li class="profile_status_slide" data-index="0">
-            <div class="user_profile">
-              <div class="pieBackground"></div>
-              <div id="pieSliceprofile" class="hold">
-                <div class="pie"></div>
-              </div>
-              <div class="innerCircle">
-                <div class="content"><img src="./images/user_profile.svg" alt="user_profile"></div>
-              </div>
-            </div>
-            <!-- <span><img src="./images/profile_status.svg" alt="profile_status"></span> -->
-          </li>
-          <li class="assessment_completion_slide" data-index="1">
-            <div class="assess_icon_wrap">
-              <div class="pieBackground"></div>
-              <div id="pieSlice1" class="hold">
-                <div class="pie"></div>
-              </div>
-              <div id="pieSlice2" class="hold">
-                <div class="pie"></div>
-              </div>
-              <div id="pieSlice3" class="hold">
-                <div class="pie"></div>
-              </div>
-              <div class="innerCircle">
-                <div class="content"><img src="./images/assess_icon.svg" alt="assess_icon"></div>
-              </div>
-            </div>
-            <!-- <span><img src="./images/assessment_completion.svg" alt="assessment_completion"></span> -->
-          </li>
-          <li class="notification active">
+          <li class="ml-auto notification active">
             <span><img src="./images/notification.svg" alt="notification"></span>
           </li>
         </ul>
@@ -67,23 +37,21 @@
             </a>
             <div class="status_check_wrap">
               Status:
-              <input type="checkbox" id="status_switch" class="status_switch" checked><label
-                for="status_switch">Toggle</label>
+              <input type="checkbox" id="status_switch" class="status_switch" checked><label for="status_switch">Toggle</label>
               <span class="current_status">Active</span>
               <span class="pl-3 info_popup"><img src="./images/info_icon.svg" alt="info_icon"></span>
               <div class="send_msg" id="unchecked_msg" style="display: none;">
-                <span class="close_popup">&times;</span>
-                <p class="mb-2">Please send a message to collabera representative to change your status
-                  to Active</p>
-                <button class="btn_primary w-100">Send Message</button>
+                  <span class="close_popup">&times;</span>
+                  <p class="mb-2">Please send a message to collabera representative to change your status
+                      to Active</p>
+                  <button class="btn_primary w-100">Send Message</button>
               </div>
               <div class="send_msg" id="checked_msg" style="display: none;">
                 <span class="close_popup">&times;</span>
-                <p class="mb-0">You are currently
-                  Re-deployable consultant, you can always make yourself non-redeployable by toggling your status to
-                  inactive</p>
-              </div>
+                <p class="mb-0">You are currently 
+                  Re-deployable consultant, you can always make yourself non-redeployable by toggling your status to inactive</p>
             </div>
+          </div>
           </li>
           <li class="nav-item"> <a class="nav-link arrow_right p-0" href="">
               <span class="mr-2">
@@ -309,7 +277,7 @@
     </div>
     <div class="bottom_nav">
       <ul>
-        <li class="active">
+        <li>
           <a href="#">
             <svg width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -370,7 +338,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="active">
           <a href="#">
             <svg width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -412,126 +380,30 @@
         </li>
       </ul>
     </div>
-    <div class="progress_wrap">
-      <div class="progress_wrap_inner">
-        <div id="progress_wrap_carousel" class="carousel slide" data-interval="false" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#progress_wrap_carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#progress_wrap_carousel" data-slide-to="1"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item first_slide active">
-              <div class="row m-0">
-                <div class="col-12 px-0">
-                  <h4>Profile Status <span class="pl-2"><img src="./images/info_icon.svg" alt="info_icon" /></span></h4>
-                </div>
-                <div class="col-6 pl-0 pr-2">
-                  <div class="meter_wrap">
-                    <img src="./images/meter_bg.svg" alt="meter_bg" class="meter_bg">
-                    <img src="./images/needle_main.svg" alt="needle" class="needle" style="transform: rotate(411deg);">
-                    <div class="percNum">
-                      <span>79%</span>
-                    </div>
-                    <span class="zero_wrap">0%</span>
-                    <span class="hundread_wrap">100%</span>
-                  </div>
-                </div>
-                <div class="col-6 pl-2 pr-0 profile_status_desc">
-                  <h5>Hi Kevin,</h5>
-                  <p>Strong Profile will increase your hiring chances</p>
-                  <button class="btn_primary">Update Profile</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item second_slide">
-              <div class="row m-0">
-                <div class="col-12 px-0">
-                  <h4>Assessment Completions <span class="pl-2"><img src="./images/info_icon.svg"
-                        alt="info_icon" /></span></h4>
-                </div>
-                <div class="col-6 pl-0 pr-2">
-                  <div class="chart_wrap">
-                    <div id="piechart">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 pl-2 pr-0 chart_legends_wrap">
-                  <ul>
-                    <li class="pending">
-                      Pending(4)
-                    </li>
-                    <li class="completed">
-                      Completed (3)
-                    </li>
-                    <li class="inprogress">
-                      In Progress (1)
-                    </li>
-                  </ul>
-                  <button class="btn_primary mt-2">Browse Assessments</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="myjobs_nav" id="second_nav">
+      <ul>
+        <li >
+          Shortlisted
+        </li>
+        <li>
+          Applied
+        </li>
+        <li class="active">
+          Interview
+        </li>
+        <li>
+          Finalist
+        </li>
+        <li>
+          Hire
+        </li>
+        <li>
+          Rejected
+        </li>
+      </ul>
     </div>
-    <div class="quick_actions_wrap pt-0">
-      <div class="quick_actions_inner">
-        <h4>Quick Actions</h4>
-        <div class="quick_actions_list mt-3">
-          <ul>
-            <li>
-              <h5 class="shortlist_color">12</h5>
-              <p>Shortlisted</p>
-            </li>
-            <li>
-              <h5 class="applied_color">9</h5>
-              <p>Applied</p>
-            </li>
-            <li>
-              <h5 class="interview_color">5</h5>
-              <p>Interviewing</p>
-            </li>
-            <li>
-              <h5 class="finalist_color">2</h5>
-              <p>Finalist</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="quick_actions_wrap pt-0">
-      <div class="quick_actions_inner">
-        <h4>Search</h4>
-        <form action="">
-          <div class="form_group mb-2">
-            <input type="text" placeholder="Job Skills">
-          </div>
-          <div class="form_group mb-3">
-            <div class="input_check_wrap">
-              <input type="text" placeholder="Location" />
-              <div class="checkbox_wrap d-flex my-3">
-                <input type="checkbox" id="all_us_loc" width="20px" class="d-none">
-                <div class="checkbox_wrap_img mr-1"></div>
-                <label for="all_us_loc" class="mb-0">All US Locations</label>
-              </div>
-            </div>
-          </div>
-          <button class="btn_primary w-100 py-2"><span><img src="./images/search_icon.svg" alt="search_icon" /></span>
-            Find Jobs</button>
-        </form>
-      </div>
-    </div>
-
     <div class="jobs_list_wrap">
-      <div class="jobs_list_head" id="second_nav">
-        <h4>Matching Jobs</h4>
-        <div class="filter_by">
-          <span><img src="./images/noun_filters_2161054.svg" alt="noun_filters_2161054" class="mr-1"></span>
-          Filter By <span><img src="./images/filter_arrow.svg" width="8" alt="filter_arrow"></span>
-        </div>
-      </div>
-      <div class="jobs_list_inner mt-3">
+      <div class="jobs_list_inner">
         <div class="job_card_wrap">
           <div class="row m-0">
             <div class="col-8 px-0">
@@ -554,83 +426,20 @@
               <span class="tag_info">Manhattan, NY</span>
             </div>
             <div class="col-12 pt-1 px-0">
-              <p class="card_desc">
+              <p class="card_desc text_clamp_2">
                 Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
                 world's
               </p>
             </div>
-            <div class="col-12 pt-1 px-0">
-              <div class="align-items-center">
-                <span class="match_tag">90% Match</span>
-                <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
-                <span class="applied_tag">27 Applied</span>
+            <div class="row m-0 align-items-center pt-2 w-100">
+              <div class="col-8 interview_det p-0">
+                <h4 class="confirm_interview m-0">
+                  Round 2 Confirmed - 3:30 PM, Jan 2
+                </h4>
+                <p class="m-0">Video Interview</p>
               </div>
-            </div>
-            <div class="d-flex w-100 align-items-center">
-              <div class="col-7 pt-1 px-0">
-                <div class="contact_wrap">
-                  Contact: <span>John Trivolli</span>
-                </div>
-              </div>
-              <div class="col-5 pt-1 px-0 text-right">
-                <button class="btn_secondary mr-1">
-                  Shortlist
-                </button>
-                <button class="btn_primary">
-                  Apply
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="job_card_wrap">
-          <div class="row m-0">
-            <div class="col-8 px-0">
-              <div class="row m-0">
-                <div class="card_logo">
-                  <img src="./images/card_logo.png" alt="card_logo">
-                </div>
-                <div class="card_head pl-2">
-                  <h6>UX Designer</h6>
-                  <h5>Microsoft</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 px-0">
-              <span class="hrs_tag">4 hrs</span>
-            </div>
-            <div class="col-12 pt-1 px-0">
-              <span class="tag_info">3-4 yrs Exp.</span>
-              <span class="tag_info">$56/hr</span>
-              <span class="tag_info">Manhattan, NY</span>
-            </div>
-            <div class="col-12 pt-1 px-0">
-              <p class="card_desc">
-                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
-                world's
-              </p>
-            </div>
-            <div class="col-12 pt-1 px-0">
-              <div class="align-items-center">
-                <span class="match_tag">90% Match</span>
-                <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
-                <span class="applied_tag">27 Applied</span>
-              </div>
-            </div>
-            <div class="d-flex w-100 align-items-center">
-              <div class="col-7 pt-1 px-0">
-                <div class="contact_wrap">
-                  Contact: <span>John Trivolli</span>
-                </div>
-              </div>
-              <div class="col-5 pt-1 px-0 text-right">
-                <button class="btn_secondary mr-1">
-                  Shortlist
-                </button>
-                <button class="btn_primary">
-                  Apply
-                </button>
+              <div class="col-4 pr-0 text-right">
+                <button class="start_btn disabled_btn"><span><img src="./images/video_camera_icon.svg" alt="video_camera_icon" /></span> Start</button>
               </div>
             </div>
 
@@ -658,106 +467,204 @@
               <span class="tag_info">Manhattan, NY</span>
             </div>
             <div class="col-12 pt-1 px-0">
-              <p class="card_desc">
+              <p class="card_desc text_clamp_2">
                 Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
                 world's
               </p>
             </div>
-            <div class="col-12 pt-1 px-0">
-              <div class="align-items-center">
-                <span class="match_tag">90% Match</span>
-                <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
-                <span class="applied_tag">27 Applied</span>
+            <div class="row m-0 align-items-center pt-2 w-100">
+              <div class="col-8 interview_det p-0">
+                <h4 class="scheduled_interview m-0">
+                  Round 2 Scheduled
+                </h4>
+                <p class="m-0">Face 2 Face</p>
               </div>
-            </div>
-            <div class="d-flex w-100 align-items-center">
-              <div class="col-7 pt-1 px-0">
-                <div class="contact_wrap">
-                  Contact: <span>John Trivolli</span>
-                </div>
-              </div>
-              <div class="col-5 pt-1 px-0 text-right">
-                <button class="btn_secondary mr-1">
-                  Shortlist
-                </button>
-                <button class="btn_primary">
-                  Apply
-                </button>
+              <div class="col-4 pr-0 text-right">
+                <button class="confirm_btn">Confirm</button>
               </div>
             </div>
 
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="job_modal_view">
-    <div class="job_modal_view_inner">
-      <span class="close_job_modal">&times;</span>
-      <div class="job_card_wrap mt-0">
-        <div class="row m-0">
-          <div class="col-8 px-0">
-            <div class="row m-0">
-              <div class="card_logo">
-                <img src="./images/card_logo.png" alt="card_logo">
-              </div>
-              <div class="card_head pl-2">
-                <h6>UX Designer</h6>
-                <h5>Microsoft</h5>
+        <div class="job_card_wrap">
+          <div class="row m-0">
+            <div class="col-8 px-0">
+              <div class="row m-0">
+                <div class="card_logo">
+                  <img src="./images/card_logo.png" alt="card_logo">
+                </div>
+                <div class="card_head pl-2">
+                  <h6>UX Designer</h6>
+                  <h5>Microsoft</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-4 px-0">
-            <span class="hrs_tag">4 hrs</span>
-          </div>
-          <div class="col-12 pt-1 px-0">
-            <span class="tag_info">3-4 yrs Exp.</span>
-            <span class="tag_info">$56/hr</span>
-            <span class="tag_info">Manhattan, NY</span>
-          </div>
-          <div class="col-12 pt-1 px-0">
-            <p class="card_desc">
-              Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
-              world's
-            </p>
-          </div>
-          <div class="col-12 pt-1 px-0">
-            <div class="align-items-center">
-              <span class="match_tag">90% Match</span>
-              <span class="hotjob_tag"><span><img src="./images/hotjob.svg" alt="hotjob" /></span> Hot Job</span>
-              <span class="applied_tag">27 Applied</span>
+            <div class="col-4 px-0">
+              <span class="hrs_tag">4 hrs</span>
             </div>
-          </div>
-          <div class="d-flex w-100 align-items-center">
-            <div class="col-7 pt-1 px-0">
+            <div class="col-12 pt-1 px-0">
+              <span class="tag_info">3-4 yrs Exp.</span>
+              <span class="tag_info">$56/hr</span>
+              <span class="tag_info">Manhattan, NY</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <p class="card_desc text_clamp_2">
+                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+                world's
+              </p>
+            </div>
+            <div class="row m-0 align-items-center pt-2 w-100">
+              <div class="col-8 interview_det p-0">
+                <h4 class="confirm_interview m-0">
+                  Round 2 Confirmed - 3:30 PM, Jan 2
+                </h4>
+                <p class="m-0">Video Interview</p>
+              </div>
+              <div class="col-4 pr-0 text-right">
+                <button class="start_btn"><span><img src="./images/video_camera_icon.svg" alt="video_camera_icon" /></span> Start</button>
+              </div>
+            </div>
 
-            </div>
-            <div class="col-5 pt-1 px-0 text-right">
-              <button class="btn_secondary mr-1">
-                Shortlist
-              </button>
-              <button class="btn_primary">
-                Apply
-              </button>
-            </div>
           </div>
-          <div class="col-12 px-0 job_contact_wrap">
-            <h5>Contact Info</h5>
-            <hr>
-            <h3>Lance Lewis</h3>
-            <p>Project Manager - Digital Transformation</p>
-            <a href=""><span><img src="./images/phone_num.svg" alt="phone_num"></span> +302-990-0013</a>
-            <a href=""><span><img src="./images/noun_Email_740627.svg" alt="mail_icon"></span> lance.lewis @
-              microsoft.com</a>
+        </div>
+        <div class="job_card_wrap">
+          <div class="row m-0">
+            <div class="col-8 px-0">
+              <div class="row m-0">
+                <div class="card_logo">
+                  <img src="./images/card_logo.png" alt="card_logo">
+                </div>
+                <div class="card_head pl-2">
+                  <h6>UX Designer</h6>
+                  <h5>Microsoft</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 px-0">
+              <span class="hrs_tag">4 hrs</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <span class="tag_info">3-4 yrs Exp.</span>
+              <span class="tag_info">$56/hr</span>
+              <span class="tag_info">Manhattan, NY</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <p class="card_desc text_clamp_2">
+                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+                world's
+              </p>
+            </div>
+            <div class="row m-0 align-items-center pt-2 w-100">
+              <div class="col-8 interview_det p-0">
+                <h4 class="cancel_interview m-0">
+                  Round 3 Interview Cancelled
+                </h4>
+                <p class="m-0"><del>Face 2 Face</del></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="job_card_wrap">
+          <div class="row m-0">
+            <div class="col-8 px-0">
+              <div class="row m-0">
+                <div class="card_logo">
+                  <img src="./images/card_logo.png" alt="card_logo">
+                </div>
+                <div class="card_head pl-2">
+                  <h6>UX Designer</h6>
+                  <h5>Microsoft</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 px-0">
+              <span class="hrs_tag">4 hrs</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <span class="tag_info">3-4 yrs Exp.</span>
+              <span class="tag_info">$56/hr</span>
+              <span class="tag_info">Manhattan, NY</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <p class="card_desc text_clamp_2">
+                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+                world's
+              </p>
+            </div>
+            <div class="row m-0 align-items-center pt-2 w-100">
+              <div class="col-8 interview_det p-0">
+                <h4 class="confirm_interview m-0">
+                  Round 4 - Interview Completed
+                </h4>
+                <p class="m-0">Video Interview</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-</body>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="./js/script.js"></script>
-
-</html>
+    <div class="job_modal_view">
+      <div class="job_modal_view_inner">
+        <span class="close_job_modal">&times;</span>
+        <div class="job_card_wrap mt-0">
+          <div class="row m-0">
+            <div class="col-8 px-0">
+              <div class="row m-0">
+                <div class="card_logo">
+                  <img src="./images/card_logo.png" alt="card_logo">
+                </div>
+                <div class="card_head pl-2">
+                  <h6>UX Designer</h6>
+                  <h5>Microsoft</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 px-0">
+              <span class="hrs_tag">4 hrs</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <span class="tag_info">3-4 yrs Exp.</span>
+              <span class="tag_info">$56/hr</span>
+              <span class="tag_info">Manhattan, NY</span>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <p class="card_desc text_clamp_2">
+                Microsoft is seeking a passionate, curious & creative UX Designer to join our Product team at one of the
+                world's
+              </p>
+            </div>
+            <div class="col-12 pt-1 px-0">
+              <div class="align-items-center">
+                <span class="match_tag">90% Match</span>
+              </div>
+            </div>
+            <div class="d-flex w-100 align-items-center">
+              <div class="col-7 pt-1 px-0">
+  
+              </div>
+              <div class="col-5 pt-1 px-0 text-right">
+                <div class="applied_tag"><span><img src="./images/applied_icon.svg" alt="applied_icon"></span> Applied on Jun 2, 2019</div>
+              </div>
+            </div>
+            <div class="col-12 px-0 job_contact_wrap">
+              <h5>Contact Info</h5>
+              <hr>
+              <h3>Lance Lewis</h3>
+              <p>Project Manager - Digital Transformation</p>
+              <a href=""><span><img src="./images/phone_num.svg" alt="phone_num"></span> +302-990-0013</a>
+              <a href=""><span><img src="./images/noun_Email_740627.svg" alt="mail_icon"></span> lance.lewis @
+                microsoft.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="./js/script.js"></script>
+  </html>
