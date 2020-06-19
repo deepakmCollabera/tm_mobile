@@ -1,0 +1,734 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <title>My Resume</title>
+</head>
+
+<body>
+  <div class="myresume_wrapper">
+    <div class="myresume_nav">
+      <div class="row m-0 align-items-center">
+        <div class="col-1 p-0">
+          <a href="">
+            <span><img src="./images/go_back_icon.svg" alt="go_back_icon" /></span>
+          </a>
+        </div>
+        <div class="col-6 pl-2 pr-0">
+          <h5>My Profile</h5>
+        </div>
+        <div class="col-5 pl-2 pr-0 text-right">
+          <button class="ml-auto profile_reset_btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="myresume_btn">
+      <button class="btn_primary">Update Profile</button>
+    </div>
+    <div class="autofill_wrap">
+      <div class="d-flex align-items-center">
+        <h5 class="m-0">Auto Fill form</h5>
+        <button class="btn_primary ml-auto">Upload Resume</button>
+      </div>
+    </div>
+    <div class="resume_tab_list" id="second_nav">
+      <ul class="px-custom-5">
+        <li class="sp_tab_head pl-0 active" data-slide="basic">
+          <a href="#basic">
+            <span class="tik_mark active d-block text-center">
+              <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Talent-Mob-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Candidate-Profile-Blank" transform="translate(-98.000000, -176.000000)" fill="#dcdde5"
+                    fill-rule="nonzero">
+                    <g id="Group-21" transform="translate(74.000000, 176.000000)">
+                      <g id="noun_tick_1373176" transform="translate(24.000000, 0.000000)">
+                        <path
+                          d="M7,0 C3.12941176,0 0,3.12941176 0,7 C0,10.8705882 3.12941176,14 7,14 C10.8705882,14 14,10.8705882 14,7 C14,3.12941176 10.8705882,0 7,0 Z M7.30882353,9.30588235 L5.95,10.6647059 L4.59117647,9.30588235 L2.67647059,7.39117647 L4.03529412,6.03235294 L5.95,7.94705882 L9.98529412,3.91176471 L11.3441176,5.27058824 L7.30882353,9.30588235 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            Basic</a>
+        </li>
+        <li class="sp_tab_head" data-slide="professional">
+          <a href="#professional">
+            <span class="tik_mark d-block text-center">
+              <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Talent-Mob-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Candidate-Profile-Blank" transform="translate(-98.000000, -176.000000)" fill="#dcdde5"
+                    fill-rule="nonzero">
+                    <g id="Group-21" transform="translate(74.000000, 176.000000)">
+                      <g id="noun_tick_1373176" transform="translate(24.000000, 0.000000)">
+                        <path
+                          d="M7,0 C3.12941176,0 0,3.12941176 0,7 C0,10.8705882 3.12941176,14 7,14 C10.8705882,14 14,10.8705882 14,7 C14,3.12941176 10.8705882,0 7,0 Z M7.30882353,9.30588235 L5.95,10.6647059 L4.59117647,9.30588235 L2.67647059,7.39117647 L4.03529412,6.03235294 L5.95,7.94705882 L9.98529412,3.91176471 L11.3441176,5.27058824 L7.30882353,9.30588235 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            Professional</a>
+        </li>
+        <li class="sp_tab_head" data-slide="contact">
+          <a href="#contact">
+            <span class="tik_mark d-block text-center">
+              <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Talent-Mob-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Candidate-Profile-Blank" transform="translate(-98.000000, -176.000000)" fill="#dcdde5"
+                    fill-rule="nonzero">
+                    <g id="Group-21" transform="translate(74.000000, 176.000000)">
+                      <g id="noun_tick_1373176" transform="translate(24.000000, 0.000000)">
+                        <path
+                          d="M7,0 C3.12941176,0 0,3.12941176 0,7 C0,10.8705882 3.12941176,14 7,14 C10.8705882,14 14,10.8705882 14,7 C14,3.12941176 10.8705882,0 7,0 Z M7.30882353,9.30588235 L5.95,10.6647059 L4.59117647,9.30588235 L2.67647059,7.39117647 L4.03529412,6.03235294 L5.95,7.94705882 L9.98529412,3.91176471 L11.3441176,5.27058824 L7.30882353,9.30588235 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            Contact</a>
+        </li>
+        <li class="sp_tab_head" data-slide="social">
+          <a href="#social">
+            <span class="tik_mark d-block text-center">
+              <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Talent-Mob-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Candidate-Profile-Blank" transform="translate(-98.000000, -176.000000)" fill="#dcdde5"
+                    fill-rule="nonzero">
+                    <g id="Group-21" transform="translate(74.000000, 176.000000)">
+                      <g id="noun_tick_1373176" transform="translate(24.000000, 0.000000)">
+                        <path
+                          d="M7,0 C3.12941176,0 0,3.12941176 0,7 C0,10.8705882 3.12941176,14 7,14 C10.8705882,14 14,10.8705882 14,7 C14,3.12941176 10.8705882,0 7,0 Z M7.30882353,9.30588235 L5.95,10.6647059 L4.59117647,9.30588235 L2.67647059,7.39117647 L4.03529412,6.03235294 L5.95,7.94705882 L9.98529412,3.91176471 L11.3441176,5.27058824 L7.30882353,9.30588235 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            Social</a>
+        </li>
+        <li class="sp_tab_head" data-slide="workexp">
+          <a href="#workexp">
+            <span class="tik_mark active d-block text-center">
+              <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Talent-Mob-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Candidate-Profile-Blank" transform="translate(-98.000000, -176.000000)" fill="#dcdde5"
+                    fill-rule="nonzero">
+                    <g id="Group-21" transform="translate(74.000000, 176.000000)">
+                      <g id="noun_tick_1373176" transform="translate(24.000000, 0.000000)">
+                        <path
+                          d="M7,0 C3.12941176,0 0,3.12941176 0,7 C0,10.8705882 3.12941176,14 7,14 C10.8705882,14 14,10.8705882 14,7 C14,3.12941176 10.8705882,0 7,0 Z M7.30882353,9.30588235 L5.95,10.6647059 L4.59117647,9.30588235 L2.67647059,7.39117647 L4.03529412,6.03235294 L5.95,7.94705882 L9.98529412,3.91176471 L11.3441176,5.27058824 L7.30882353,9.30588235 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            Work Exp.</a>
+        </li>
+        <li class="sp_tab_head" data-slide="education">
+          <a href="#education">
+            <span class="tik_mark active d-block text-center">
+              <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Talent-Mob-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Candidate-Profile-Blank" transform="translate(-98.000000, -176.000000)" fill="#dcdde5"
+                    fill-rule="nonzero">
+                    <g id="Group-21" transform="translate(74.000000, 176.000000)">
+                      <g id="noun_tick_1373176" transform="translate(24.000000, 0.000000)">
+                        <path
+                          d="M7,0 C3.12941176,0 0,3.12941176 0,7 C0,10.8705882 3.12941176,14 7,14 C10.8705882,14 14,10.8705882 14,7 C14,3.12941176 10.8705882,0 7,0 Z M7.30882353,9.30588235 L5.95,10.6647059 L4.59117647,9.30588235 L2.67647059,7.39117647 L4.03529412,6.03235294 L5.95,7.94705882 L9.98529412,3.91176471 L11.3441176,5.27058824 L7.30882353,9.30588235 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            Education</a>
+        </li>
+        <li class="sp_tab_head" data-slide="references">
+          <a href="#references">
+            <span class="tik_mark d-block text-center">
+              <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Talent-Mob-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Candidate-Profile-Blank" transform="translate(-98.000000, -176.000000)" fill="#dcdde5"
+                    fill-rule="nonzero">
+                    <g id="Group-21" transform="translate(74.000000, 176.000000)">
+                      <g id="noun_tick_1373176" transform="translate(24.000000, 0.000000)">
+                        <path
+                          d="M7,0 C3.12941176,0 0,3.12941176 0,7 C0,10.8705882 3.12941176,14 7,14 C10.8705882,14 14,10.8705882 14,7 C14,3.12941176 10.8705882,0 7,0 Z M7.30882353,9.30588235 L5.95,10.6647059 L4.59117647,9.30588235 L2.67647059,7.39117647 L4.03529412,6.03235294 L5.95,7.94705882 L9.98529412,3.91176471 L11.3441176,5.27058824 L7.30882353,9.30588235 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            References</a>
+        </li>
+      </ul>
+    </div>
+    <div class="tab_content_wrap">
+      <div class="tabs_content" id="basic">
+        <div class="box_shape">
+          <h4>Basic Details</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-6 pl-0 pr-2">
+                <div class="profile_pic_wrap">
+                  <img src="./images/profile_pic_ph.png" alt="profile_pic_ph" />
+                </div>
+              </div>
+              <div class="col-6 text-right p-0">
+                <button class="btn_secondary my-4">+ Add Profile Pic</button>
+              </div>
+              <div class="col-12 pt-4 px-1">
+                <div class="form_group required">
+                  <label for="">First Name</label>
+                  <input type="text" placeholder="Enter First Name">
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Middle Name</label>
+                  <input type="text" placeholder="Enter Middle Name">
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Last Name</label>
+                  <input type="text" placeholder="Enter Last Name">
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group calendaricon required">
+                  <label for="">DOB</label>
+                  <input type="text" placeholder="Enter Date">
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group locationicon required">
+                  <label for="">Location</label>
+                  <input type="text" placeholder="Enter City/State">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group radio_btn">
+                  <p class="mb-1">Gender</p>
+                  <div class="row m-0 mt-2">
+                    <div class="radio_group mb-2">
+                      <input type="radio" id="male" name="gender" value="male" class="d-none">
+                      <label for="male">
+                      <div class="radio_check_wrap"></div>
+                        Male</label>
+                    </div>
+                    <div class="radio_group">
+                      <input type="radio" id="female" name="gender" value="Female" class="d-none">
+                      <label for="female">
+                      <div class="radio_check_wrap"></div>
+                        Female</label>
+                    </div>
+                    <div class="radio_group">
+                      <input type="radio" id="others" name="gender" value="Others" class="d-none">
+                      <label for="others">
+                      <div class="radio_check_wrap"></div>
+                        Others</label>
+                    </div>
+                    <div class="radio_group">
+                      <input type="radio" id="notsay" name="gender" value="Prefer Not to Say" class="d-none">
+                      <label for="notsay">
+                      <div class="radio_check_wrap"></div>
+                        Prefer Not to Say</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box_shape pt-3">
+          <h4>Profile Video</h4>
+          <div class="tab_content_inner">
+            <p class="tab_content_desc">Upload a video job profile for employers to get a quick insight about you.</p>
+            <div class="text-right">
+              <button class="btn_secondary">+ Add a Video</button>
+            </div>
+          </div>
+        </div>
+        <div class="box_shape pt-3">
+          <h4>CERTIFICATIONS</h4>
+          <div class="tab_content_inner">
+            <p class="tab_content_desc">Add professional certifications to increase your hiring chances</p>
+            <div class="text-right">
+              <button class="btn_secondary">+ Add Certifications</button>
+            </div>
+          </div>
+        </div>
+        <div class="box_shape pt-3">
+          <h4>Upload Resume</h4>
+          <div class="tab_content_inner">
+            <p class="tab_content_desc">Upload a resume in a mentioned format
+              (.pdf, .doc or .docx)</p>
+            <div class="text-right">
+              <button class="btn_secondary"><span><img src="./images/upload_icon.svg" alt="upload_icon" /></span> Upload
+                Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs_content" id="professional">
+        <div class="box_shape">
+          <h4>Professional Details</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-6 pl-0 pr-2">
+                <div class="form_group radio_btn">
+                  <p class="mb-1">Willing to Relocate</p>
+                  <div class="row m-0 mt-2">
+                    <div class="radio_group">
+                      <input type="radio" id="relocateyes" name="relocate" value="yes" class="d-none">
+                      <label for="relocateyes"> <div class="radio_check_wrap"></div> Yes</label>
+                    </div>
+                    <div class="radio_group">
+                      <input type="radio" id="relocateno" name="relocate" value="no" class="d-none">
+                      
+                      <label for="relocateno"><div class="radio_check_wrap"></div> No</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 pl-0 pr-2">
+                <div class="form_group radio_btn">
+                  <p class="mb-1">Willing to Telecommute</p>
+                  <div class="row m-0 mt-2">
+                    <div class="radio_group">
+                      <input type="radio" id="telecommuteyes" name="telecommute" value="yes" class="d-none">
+                      <label for="telecommuteyes"> <div class="radio_check_wrap"></div> Yes</label>
+                    </div>
+                    <div class="radio_group">
+                      <input type="radio" id="telecommuteno" name="telecommute" value="no" class="d-none">
+                      
+                      <label for="telecommuteno"><div class="radio_check_wrap"></div> No</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 pt-4 px-1">
+                <div class="form_group select_wrap">
+                  <label for="travel_select">Willing to Travel</label>
+                  <select name="" id="travel_select">
+                    <option value=" ">Select</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group addicon required">
+                  <label for="">Location Prefrences</label>
+                  <input type="text" placeholder="Select Location">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group addicon required">
+                  <label for="">Work Authorization</label>
+                  <input type="text" placeholder="Select Location">
+                </div>
+              </div>
+              <div class="col-12 pt-4 px-1">
+                <div class="form_group select_wrap">
+                  <label for="travel_select">Availability</label>
+                  <select name="" id="travel_select">
+                    <option value=" ">Select</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 pt-4 px-1">
+                <div class="form_group select_wrap">
+                  <label for="travel_select">Work Preference</label>
+                  <select name="" id="travel_select">
+                    <option value=" ">Select</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Total Experience</label>
+                  <input type="text" placeholder="Enter Exp.">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group addicon required">
+                  <label for="">Technical Skills</label>
+                  <input type="text" placeholder="Enter Skills">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group addicon required">
+                  <label for="">Other Skills</label>
+                  <input type="text" placeholder="Enter Skills">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Hobby</label>
+                  <textarea name="Hobby" id="" cols="30" rows="5" placeholder="Enter Hobby"></textarea>
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Executive Summary</label>
+                  <textarea name="Hobby" id="" cols="30" rows="8" placeholder="Please enter your professional executive summary"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs_content" id="contact">
+        <div class="box_shape">
+          <h4>Contact Details</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-5 px-1">
+                <div class="form_group required">
+                  <label for="">Country Code</label>
+                  <input type="text" placeholder="eg. +1">
+                </div>
+              </div>
+              <div class="col-7 px-1">
+                <div class="form_group required">
+                  <label for="">Mobile No.</label>
+                  <input type="text" placeholder="eg. +13024560098">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Phone No.</label>
+                  <input type="text" placeholder="eg. +13024560098">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Email ID</label>
+                  <input type="text" placeholder="eg. john.doe@xyz.com">
+                </div>
+              </div>
+              <div class="col-5 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Zip Code *</label>
+                  <input type="text" placeholder="Enter Zip Code">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Website URL</label>
+                  <input type="text" placeholder="eg. www.xyzsite.com">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Address</label>
+                  <textarea name="Address" id="" cols="30" rows="5" placeholder="Enter Full Address"></textarea>
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Additional Mobile No. </label>
+                  <input type="text" placeholder="eg. +13024560098">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Additional Email ID </label>
+                  <input type="text" placeholder="eg. john.doe@xyz.com">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs_content" id="social">
+        <div class="box_shape">
+          <h4>Social Link - 1</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-12 px-1">
+                <div class="form_group position-relative sociallinks select_wrap">
+                  <select name="" id="travel_select">
+                    <option value=" ">Select Social Network  </option>
+                  </select>
+                  <input type="text" placeholder="Enter Skills" class="mt-3">
+                </div>
+                <div class="form_group position-relative sociallinks select_wrap mt-4">
+                  <select name="" id="travel_select">
+                    <option value=" ">Select Social Network  </option>
+                  </select>
+                  <input type="text" placeholder="Enter Skills" class="mt-3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn_secondary mt-2 ml-3">+ Add Another</button>
+        </div>
+      </div>
+      <div class="tabs_content" id="workexp">
+        <div class="box_shape">
+          <h4>Current Project Detail - 1</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-12 px-1">
+                <div class="form_group required">
+                  <label for="">Project Name</label>
+                  <input type="text" placeholder="eg. Retail App">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Client Name</label>
+                  <input type="text" placeholder="eg. Microsoft">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Recruiter Name</label>
+                  <input type="text" placeholder="Enter Full Name">
+                </div>
+              </div>
+              <div class="col-5 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Country Code</label>
+                  <input type="text" placeholder="eg. +1">
+                </div>
+              </div>
+              <div class="col-7 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Recruiter Phone No.</label>
+                  <input type="text" placeholder="eg. +13024560098">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Recruiter Email ID</label>
+                  <input type="text" placeholder="Enter Email ID">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Manager Name</label>
+                  <input type="text" placeholder="Enter Full Name">
+                </div>
+              </div>
+              <div class="col-5 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Country Code</label>
+                  <input type="text" placeholder="eg. +1">
+                </div>
+              </div>
+              <div class="col-7 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Manager Phone No.</label>
+                  <input type="text" placeholder="eg. +13024560098">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Manager Email ID</label>
+                  <input type="text" placeholder="Enter Email ID">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn_secondary mt-2 ml-3">+ Add Another</button>
+        </div>
+        <div class="box_shape pt-3">
+          <h4>Work Experience - 1</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-12 px-1">
+                <div class="form_group required">
+                  <label for="">Job Title</label>
+                  <input type="text" placeholder="Enter Title">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Company Name</label>
+                  <input type="text" placeholder="Enter Employer Name">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Location</label>
+                  <input type="text" placeholder="Enter City/State">
+                </div>
+              </div>
+              <div class="col-7 pt-3 px-1">
+                <div class="form_group select_wrap">
+                  <label for="">Position Type</label>
+                  <select name="" id="travel_select">
+                    <option value=" ">Select Type</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-5 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Currently Active</label>
+                  <p class="status_check_wrap form_check_css line-height-0"><input type="checkbox" id="currently_active" class="status_switch"><label for="currently_active" class="ml-auto mr-auto mb-1">Toggle</label> <span class="yesNo text_book_12"></span></p>
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Job Domain</label>
+                  <input type="text" placeholder="Enter Domain">
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Enter Date</label>
+                  <input type="text" placeholder="Enter Date">
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">End Date</label>
+                  <input type="text" placeholder="Enter Date">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group required">
+                  <label for="">Description</label>
+                  <textarea name="" id="" cols="30" rows="8" placeholder="Enter description about your stint at this organization"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn_secondary mt-2 ml-3">+ Add Another</button>
+        </div>
+      </div>
+      <div class="tabs_content" id="education">
+        <div class="box_shape">
+          <h4>Education History - 1</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-6 px-1">
+                <div class="form_group select_wrap">
+                  <label for="">School Type</label>
+                  <select name="" id="travel_select">
+                    <option value=" ">Select Type</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6 px-1">
+                <div class="form_group select_wrap">
+                  <label for="">Degree Type</label>
+                  <select name="" id="travel_select">
+                    <option value=" ">Select Type</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">School Name</label>
+                  <input type="text" placeholder="Enter Institute Name">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">Degree Name</label>
+                  <input type="text" placeholder="Enter Institute Name">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">Major In</label>
+                  <textarea name="" id="" cols="30" rows="3" placeholder="Enter Major Subjects"></textarea>
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">Start Date</label>
+                  <input type="text" placeholder="Enter Date" />
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">End Date</label>
+                  <input type="text" placeholder="Enter Date" />
+                </div>
+              </div>
+              <div class="col-6 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">Degree Date</label>
+                  <input type="text" placeholder="Enter Date" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn_secondary mt-2 ml-3">+ Add Another</button>
+        </div>
+      </div>
+      <div class="tabs_content" id="references">
+        <div class="box_shape">
+          <h4>REFERENCE - 1</h4>
+          <div class="tab_content_inner">
+            <div class="row m-0">
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">Name</label>
+                  <input type="text" placeholder="Enter Full Name">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">Email ID</label>
+                  <input type="text" placeholder="Enter Email ID">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group">
+                  <label for="">Phone No.</label>
+                  <input type="text" placeholder="Enter Mobile No.">
+                </div>
+              </div>
+              <div class="col-12 pt-3 px-1">
+                <div class="form_group select_wrap">
+                  <label for="">Your Relationship With</label>
+                  <select name="" id="travel_select">
+                    <option value=" ">Select Relationship</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn_secondary mt-2 ml-3">+ Add Another</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
