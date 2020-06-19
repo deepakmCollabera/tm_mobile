@@ -128,10 +128,14 @@ $(document).ready(function () {
     if (prevScrollpos > currentScrollPos) {
       $(".top_navbar").removeClass("topslide");
       $(".jobdetail_topbar").removeClass("topslide");
+      $(".myresume_nav").removeClass("topslide");
+      $(".assessment_nav").removeClass("topslide");
       $(".bottom_nav").removeClass("bottom_slide");
     } else {
       $(".top_navbar").addClass("topslide");
       $(".jobdetail_topbar").addClass("topslide");
+      $(".myresume_nav").addClass("topslide");
+      $(".assessment_nav").addClass("topslide");
       $(".bottom_nav").addClass("bottom_slide");
     }
     prevScrollpos = currentScrollPos;
@@ -140,13 +144,64 @@ $(document).ready(function () {
     $window.scroll(function() {
       if ( window.pageYOffset > distance ) {
           $('#second_nav').addClass("second_nav_stick");
+          $('.tab_content_wrap').addClass("active");
       }else if ( $window.scrollTop() < distance ){
         $('#second_nav').removeClass("second_nav_stick");
+        $('.tab_content_wrap').removeClass("active");
       }
   });
   }
   // on scroll down hide top nav
 
+  var flag = 0;
+  if (flag == 0) {
+    $(" .resume_tab_list .sp_tab_head").each(function () {
+      var thisID = $(this).attr("data-slide");
+      $(this).attr("data-scrltop", $("#" + thisID).offset().top);
+    });
+    flag = 1;
+  }
+  $(" .resume_tab_list .sp_tab_head").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr("data-slide");
+    $(".tab_content_wrap.active").animate(
+      {
+        scrollTop: $(this).attr("data-scrltop") - 240
+      },
+      1000
+    );
+    $(".resume_tab_list li").removeClass("active");
+    $(".resume_tab_list .sp_tab_head[data-slide = " + id + "]").addClass(
+      "active"
+    );
+  });
+  // side nav on click scroll slowly
 
+  // on scroll active current item
+  $(".tab_content_wrap").on("scroll", function () {
+    $(".tabs_content").each(function () {
+      if ($(this).offset().top < 200) {
+        var id = $(this).attr("id");
+        $(".resume_tab_list li").removeClass("active");
+        $(".resume_tab_list")
+          .find("[data-slide='" + id + "']")
+          .addClass("active");
+      }
+    });
+  });
+
+  $(".extra_one").on("click", function () {
+    $(".extra_tooltip").not(this).removeClass("show");
+    $(this).children(".extra_tooltip").addClass("show");
+  })
+  $(document).on("click", ".extra_tooltip_close", function(){
+    $(this).parent().removeClass("show");
+  })
+
+  // selectlogo
+  $(".selectlogo").on("click", function(){
+    $(this).toggleClass("active");
+  })
+  // selectlogo
 })
 
