@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <title>Filter</title>
+</head>
+
+<body>
+  <div class="fitler_wrapper">
+    <div class="filter_nav">
+      <div class="row m-0 align-items-center">
+        <a href="">
+          <span>&times;</span>
+        </a>
+        <h5>Filter</h5>
+        <div class="ml-auto">
+          <button class="reset_btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_button">
+      <button class="btn_primary">Apply</button>
+    </div>
+    <div class="filters_main_wrap pt-3">
+      <div class="filter_inner_wrap">
+        <form action="">
+          <div class="row m-0">
+            <!-- <div class="col-12">
+              <div data-role="rangeslider">
+                <label for="range-1a" class="  mb-0">Matching Range</label>
+                <input type="range" name="range-1a" id="range-1a" min="60" max="100" value="70" data-popup-enabled="true" data-show-value="true">
+                <label for="range-1b" class="  mb-0">Matching Range</label>
+                <input type="range" name="range-1b" id="range-1b" min="60" max="100" value="80" data-popup-enabled="true" data-show-value="true">
+            </div>
+            </div> -->
+            <div class="col-10 mb-4">
+              <p class="mb-0">Experience Range</p>
+              <div class="row m-0 pt-2 align-items-center">
+                <div class="col-5 px-0">
+                  <div class="form_group select_wrap">
+                    <select>
+                      <option value="0">0 yrs</option>
+                      <option value="1">1 yrs</option>
+                      <option value="2">2 yrs</option>
+                      <option value="3">3 yrs</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-2 px-0">
+                  <p class="  m-0 px-2 text-center">TO</p>
+                </div>
+                <div class="col-5 px-0">
+                  <div class="form_group select_wrap">
+                    <select>
+                      <option value="0">0 yrs</option>
+                      <option value="1">1 yrs</option>
+                      <option value="2">2 yrs</option>
+                      <option value="3">3 yrs</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mb-4">
+              <div class="form_group">
+                <label for="jd_txt">Employment Type</label>
+                <div class="sp_radio_btn_wrap">
+                  <div class="form-check-inline w-100">
+                    <label class="mb-0 mr-2 w-50">
+                      <input class="with-gap w-25" name="group1" type="checkbox" checked="">
+                      <span>Full Time</span> </label>
+                    <label class="m-0 ml-1 w-50">
+                      <input class="with-gap w-25" name="group1" type="checkbox">
+                      <span>Contract</span> </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="row m-0">
+                <div class="col-5 px-0">
+                  <div class="form_group yrs_tag">
+                    <label for="">Annual Salary
+                      (Min)</label>
+                    <div class="position-relative d-flex">
+                      <input class="border_input w-100 m-0" id="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-0">
+                  <p class="  m-0 px-2 text-center pt-4">TO</p>
+                </div>
+                <div class="col-5 px-0">
+                  <div class="form_group yrs_tag">
+                    <label for="">Annual Salary
+                      (Max)</label>
+                    <div class="position-relative d-flex">
+                      <input class="border_input w-100 m-0" id="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 px-1">
+                  <p class="my-2">Equivalent Pay Rate (Min): $25/hr (Max): $30/hr <span class="ml-1 info_wrap"><img
+                        src="./images/noun_Info_1845673.svg" alt="noun_Info_1845673"></span>
+                      <div class="got_it_wrap">
+                        <p><span>Note</span>: Per Hour rate is equivalent to Annual Salary / 2000 hrs</p>
+                        <button>Ok, got it</button>
+                      </div>
+                      </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="form_group">
+                <label for="">Show Jobs Only for This Location</label>
+                <div class="tag_location select_wrap">
+                  <span>Manhattan, NY<span class="ml-2">x</span></span>
+                  <span>Baskin Ridge, NJ<span class="ml-2">x</span></span>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="./js/script.js"></script>
+
+</html>

@@ -114,7 +114,7 @@ body {
   z-index: 99;
   left: 0;
   min-height: 40px;
-  padding: 14px;
+  padding: 14px 14px 0;
   background-color: #fff;
 }
 .top_navbar .nav_logo {
@@ -406,12 +406,13 @@ body {
   width: 60%;
 }
 .quick_actions_inner .input_check_wrap > .checkbox_wrap {
-  width: 40%;
+  width: 45%;
 }
 .quick_actions_inner .checkbox_wrap label {
   font-size: 12px;
   margin-left: 2px;
   color: #4a4a4a;
+  font-family: "Gotham-Book";
 }
 .quick_actions_inner .checkbox_wrap .checkbox_wrap_img {
   width: 16px;
@@ -475,6 +476,9 @@ body {
   font-size: 13px;
   font-family: "Gotham-Medium";
   margin-bottom: 14px;
+}
+.progress_wrap_inner h4 > span {
+  position: relative;
 }
 .progress_wrap_inner .carousel-indicators {
   top: -5px;
@@ -1118,7 +1122,7 @@ a.arrow_right {
 
 /* job details starts */
 .jobdetails_wrapper {
-  padding: 62px 0;
+  padding: 62px 0 38px;
   min-height: 100%;
   background-color: #f4f7fa;
 }
@@ -1236,12 +1240,12 @@ a.arrow_right {
   display: flex;
 }
 .jobdet_menu li {
-  padding: 8px 0;
+  padding: 8px 0 0;
   margin-right: 20px;
 }
 .jobdet_menu li.active {
-  border-bottom: 1px solid var(--theme_primary_color);
-  width: fit-content;
+  /* border-bottom: 1px solid var(--theme_primary_color);
+  width: fit-content; */
 }
 .jobdet_menu li a {
   color: #acaec1;
@@ -1362,7 +1366,6 @@ a.arrow_right {
   box-shadow: -4px 0px 18px 1px rgba(218, 221, 225, 0.58);
   border: solid 1px #eaeaea;
   margin-bottom: 20px;
-  width: 90%;
   text-align: center;
   position: relative;
 }
@@ -1728,6 +1731,7 @@ a.arrow_right {
   padding: 10px;
   font-size: 14px;
   font-family: "Gotham-Medium";
+  border-radius: 0;
 }
 .form_group .yesNo::after {
   content: "No";
@@ -2216,6 +2220,7 @@ a.arrow_right {
   padding: 8px;
   font-size: 14px;
   font-family: "Gotham-Medium";
+  border-radius: 0;
 }
 /* myprofile page ends */
 
@@ -2531,3 +2536,462 @@ a.arrow_right {
   position: absolute;
 }
 /* settings page ends */
+
+/* modal - popup starts */
+.carousel-indicators li.active {
+  background-color: var(--theme_primary_color);
+}
+.carousel-indicators li {
+  background-color: #d8d8d8;
+}
+.modal-title {
+  font-size: 16px;
+  color: var(--theme_primary_color);
+  font-family: "Gotham-Bold";
+}
+.modal-header {
+  padding: 14px;
+}
+.modal-body {
+  padding: 14px 14px 30px;
+}
+.modal-header p {
+  color: #232333;
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+}
+#autofill_modal .carousel-inner {
+  padding: 14px;
+  border: 1px solid #e0e2f0;
+}
+.carousel-indicators {
+  bottom: -30px;
+  margin: 0;
+}
+.upld_again {
+  font-size: 12px;
+  background-color: transparent;
+  color: #8a8b9b;
+  padding: 3px 5px;
+  border: 1px solid #dee0f2;
+  outline: none;
+  border-radius: 2px;
+}
+.autofill_banner {
+  padding: 14px;
+  background-color: #f7f5f5;
+}
+.autofill_banner {
+  padding: 14px;
+  background-color: #f7f5f5;
+}
+.autofill_desc {
+  padding: 14px;
+}
+.autofill_desc h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Gotham-Bold";
+  color: #ff8225;
+}
+.autofill_desc h4 span {
+  color: #ff5e1e;
+}
+.autofill_desc p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-family: "Gotham-Medium";
+  color: #4c5459;
+}
+.autofill_desc p span {
+  font-family: "Gotham-Book";
+}
+/* modal - popup ends */
+
+/* filter page start */
+.fitler_wrapper {
+  padding: 60px 0;
+  min-height: 100%;
+}
+.filter_nav {
+  padding: 14px;
+  border-bottom: 1px solid #e0e2f0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 99;
+  transition: 0.3s top;
+}
+.filter_nav a {
+  color: #515468;
+  font-size: 25px;
+  font-family: "Gotham-Book";
+  line-height: normal;
+}
+.filter_nav h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #4a545a;
+  padding-left: 10px;
+}
+.filter_nav .reset_btn {
+  margin: 0;
+  border: none;
+  font-family: "Gotham-Medium";
+}
+.filter_inner_wrap form p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-family: "Gotham-Medium";
+  color: #747588;
+}
+.filter_inner_wrap .form_group.select_wrap::before {
+  top: 47%;
+}
+.form_group.yrs_tag::before {
+  content: "yr";
+  position: absolute;
+  right: 5px;
+  top: 54%;
+  z-index: 99;
+  font-size: 12px;
+  font-family: "Gotham-Medium";
+  color: #acaec1;
+}
+.tag_location {
+  border-radius: 1px;
+  border: 1px solid #9b9fa27a;
+  background-color: #ffffff;
+  padding: 4px 8px;
+}
+.tag_location span {
+  color: #232333;
+  font-size: 11px;
+  font-family: "Gotham-Medium";
+  margin-right: 5px;
+}
+.tag_location input {
+  border: none;
+  outline: none;
+  width: 75px;
+  padding: 4px 0;
+}
+.pay_info {
+  background-color: #fdf8e7;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0 #a5a5a5;
+  z-index: 99;
+  position: absolute;
+  display: none;
+}
+.pay_info p {
+  color: #536269 !important;
+  font-family: "Gotham-Book" !important;
+}
+.pay_info p span {
+  color: var(--theme_primary_color);
+}
+.pay_info button {
+  margin-left: auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  font-family: "Gotham-Medium";
+  color: var(--theme_primary_color);
+}
+.pay_info::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fdf8e7;
+  position: absolute;
+  top: -5px;
+  right: 5%;
+}
+/* filter page ends */
+
+/* job detail shortlist page starts */
+.shortlist_tag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.shortlist_tag p {
+  font-size: 12px;
+  font-family: "Gotham-Medium";
+  color: #02ba5a;
+  margin-bottom: 0;
+}
+.shortlist_tag p img {
+  max-width: 100%;
+}
+.shortlist_tag h6 {
+  margin-left: auto;
+  font-size: 11px;
+  color: #747588;
+  margin-bottom: 0;
+}
+/* job detail shortlist page ends */
+
+/* job detail applied page starts */
+.assess_wrap_applied {
+  background-color: #fff;
+}
+.assess_wrap_applied p {
+  color: #0a7be0;
+  font-size: 12px;
+  font-family: "Gotham-Medium";
+  margin: 10px 0 0;
+}
+.assess_wrap_applied .asses_in {
+  border-right: 1px solid #e0e2f0;
+  border-bottom: 1px solid #e0e2f0;
+  padding: 14px;
+}
+/* job detail applied page ends */
+
+/* job detail interview page starts */
+.start_interview {
+  background-color: #02ba5a;
+  border: none;
+  color: #fff;
+}
+.start_interview.disabled {
+  background-color: #92ddb7;
+}
+.scheduled_tag p {
+  color: #0a7be0 !important;
+}
+/* job detail interview page ends */
+
+/* job detail rejected page starts */
+.reject_tag p {
+  color: #dd4040;
+}
+/* job detail rejected page ends */
+
+/* my resume uploaded cv page start */
+.uploaded_cv .profile_reset_btn {
+  font-size: 12px !important;
+  padding: 3px 5px !important;
+}
+.uploaded_cv h5 {
+  color: #232333;
+}
+/* my resume uploaded cv page ends */
+
+/* my resume uploaded cv page starts */
+.certification_wrap_img > div {
+  background-color: #8a8b9b;
+  display: inline;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.cv_wrap_filled {
+  max-width: 85%;
+  padding: 14px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+}
+.cv_wrap_filled img {
+  max-width: 100%;
+}
+.tags_wrap {
+  border-radius: 1px;
+  border: solid 1px #9b9fa269;
+  padding: 4px 10px;
+}
+.tags_wrap span {
+  color: #232333;
+  font-size: 12px;
+  font-family: "Gotham-Medium";
+  margin-right: 4px;
+}
+.tags_wrap input {
+  border: none;
+  font-size: 12px;
+  font-family: "Gotham-Medium";
+  color: #232333;
+  outline: none;
+  width: 100px;
+}
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.tags_wrap span::after {
+  content: "x";
+  color: #acaec1;
+  font-size: 12px;
+  margin-left: 3px;
+  cursor: pointer;
+  font-family: "Gotham-Book";
+}
+/* my resume uploaded cv page ends */
+
+/* no matching jobs page starts */
+.no_matching_jobs {
+  padding: 14px 30px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+.no_matching_jobs h4 {
+  font-size: 16px;
+  font-family: "Gotham-Medium";
+  color: #acaec1;
+  margin-bottom: 10px;
+}
+.no_matching_jobs p {
+  margin-bottom: 10px;
+  color: #4a545a;
+  font-size: 12px;
+}
+.no_matching_jobs button {
+  background-color: transparent;
+}
+.gotit_popup {
+  position: absolute;
+  z-index: 99;
+  background-color: #fff;
+  padding: 14px;
+  font-size: 12px;
+  font-family: "Gotham-Book";
+  color: #515468;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 #9c9c9c;
+  top: 16px;
+  right: -97px;
+  display: none;
+}
+.gotit_popup::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  top: -5px;
+  right: 47%;
+}
+/* no matching jobs page ends */
+
+/* confirm interview page starts */
+.confirm_interview_wrapper {
+  padding: 60px 0 38px;
+  min-height: 100%;
+  background-color: #f4f7fa;
+}
+.confirm_in_nav {
+  display: flex;
+  padding: 14px;
+  align-items: center;
+  box-shadow: 0px -1px 3px 0px #000;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  top: 0;
+  transition: 0.3s top;
+}
+.confirm_in_nav h5 {
+  margin: 0;
+  color: #515468;
+  font-size: 16px;
+}
+.confirm_in_nav a {
+  margin-left: auto;
+  color: #515468;
+  font-size: 25px;
+  font-family: "Gotham-Book";
+  line-height: normal;
+}
+.confirm_interview_main_wrap {
+  padding: 14px;
+}
+.confirm_in_form {
+  background-color: #ffffff;
+  padding: 14px;
+  border-radius: 2px;
+  border: 1px solid #e0e2f0;
+}
+.confirm_in_form .form_group > p {
+  color: #747588;
+  font-size: 12px;
+  font-family: "Gotham-Medium";
+  margin-bottom: 14px;
+}
+.confirm_in_form .form_group label {
+  margin-bottom: 0;
+}
+.date_radio {
+  padding: 4px 10px;
+  border: 1px solid #dcdde5;
+  text-align: center;
+  border-radius: 3px;
+  width: 54px;
+  margin-bottom: 10px;
+}
+.date_radio p {
+  font-size: 12px;
+  color: #acaec1;
+  font-family: "Gotham-Book";
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.date_radio p:last-child {
+  margin-bottom: 0;
+}
+.date_radio h4 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #232333;
+  font-family: "Gotham-Medium";
+}
+.radio_btn_date .radio_date input:checked ~ label .date_radio{
+  background-color: var(--theme_primary_color);
+}
+.radio_btn_date .radio_date input:checked ~ label .date_radio p, .radio_btn_date .radio_date input:checked ~ label .date_radio h4{
+  color: #fff;
+}
+.time_radio{
+  border: 1px solid #dcdde5;
+  padding: 4px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  color: #4a4a4a;
+  font-family: "Gotham-Book";
+  margin-bottom: 10px;
+}
+.radio_time input:checked ~ label .time_radio{
+  background-color: var(--theme_primary_color);
+  color: #fff;
+  border: 1px solid var(--theme_primary_color);
+}
+.confirm_in_form .form_group h5{
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Gotham-Medium";
+  color: #232333;
+}
+.confirm_in_form small{
+  color: #acaec1;
+  font-size: 12px;
+}
+/* confirm interview page ends */
+
+
+/* add country code page starts */
+.list_country_code{
+  color: #515468;
+  font-size: 14px;
+  font-family: "Gotham-Medium";
+}
+/* add country code page ends */

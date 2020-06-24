@@ -126,11 +126,14 @@ $(document).ready(function () {
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      $(".top_navbar").removeClass("topslide");
-      $(".jobdetail_topbar").removeClass("topslide");
-      $(".myresume_nav").removeClass("topslide");
-      $(".assessment_nav").removeClass("topslide");
-      $(".bottom_nav").removeClass("bottom_slide");
+      if ($(".tab_content_wrap").hasClass("active")) {
+      } else {
+        $(".top_navbar").removeClass("topslide");
+        $(".jobdetail_topbar").removeClass("topslide");
+        $(".myresume_nav").removeClass("topslide");
+        $(".assessment_nav").removeClass("topslide");
+        $(".bottom_nav").removeClass("bottom_slide");
+      }
     } else {
       $(".top_navbar").addClass("topslide");
       $(".jobdetail_topbar").addClass("topslide");
@@ -140,16 +143,16 @@ $(document).ready(function () {
     }
     prevScrollpos = currentScrollPos;
     var distance = $('#second_nav').offset().top,
-    $window = $(window);
-    $window.scroll(function() {
-      if ( window.pageYOffset > distance ) {
-          $('#second_nav').addClass("second_nav_stick");
-          $('.tab_content_wrap').addClass("active");
-      }else if ( $window.scrollTop() < distance ){
+      $window = $(window);
+    $window.scroll(function () {
+      if (window.pageYOffset > distance) {
+        $('#second_nav').addClass("second_nav_stick");
+        $('.tab_content_wrap').addClass("active");
+      } else if ($window.scrollTop() < distance) {
         $('#second_nav').removeClass("second_nav_stick");
         $('.tab_content_wrap').removeClass("active");
       }
-  });
+    });
   }
   // on scroll down hide top nav
 
@@ -164,9 +167,9 @@ $(document).ready(function () {
   $(" .resume_tab_list .sp_tab_head").on("click", function (event) {
     event.preventDefault();
     var id = $(this).attr("data-slide");
-    $(".tab_content_wrap.active").animate(
+    $(".tab_content_wrap").animate(
       {
-        scrollTop: $(this).attr("data-scrltop") - 240
+        scrollTop: $(this).attr("data-scrltop")
       },
       1000
     );
@@ -194,12 +197,16 @@ $(document).ready(function () {
     $(".extra_tooltip").not(this).removeClass("show");
     $(this).children(".extra_tooltip").addClass("show");
   })
-  $(document).on("click", ".extra_tooltip_close", function(){
+  $(document).on("click", ".extra_tooltip_close", function () {
     $(this).parent().removeClass("show");
   })
 
+  $(".info_wrap").on("click", function () {
+    $(this).parent().siblings(".got_it_wrap").toggle();
+  })
+
   // selectlogo
-  $(".selectlogo").on("click", function(){
+  $(".selectlogo").on("click", function () {
     $(this).toggleClass("active");
   })
   // selectlogo
