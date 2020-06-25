@@ -141,19 +141,20 @@ $(document).ready(function () {
       $(".assessment_nav").addClass("topslide");
       $(".bottom_nav").addClass("bottom_slide");
     }
-    prevScrollpos = currentScrollPos;
-    var distance = $('#second_nav').offset().top,
-      $window = $(window);
-    $window.scroll(function () {
-      if (window.pageYOffset > distance) {
-        $('#second_nav').addClass("second_nav_stick");
-        $('.tab_content_wrap').addClass("active");
-      } else if ($window.scrollTop() < distance) {
-        $('#second_nav').removeClass("second_nav_stick");
-        $('.tab_content_wrap').removeClass("active");
-      }
-    });
+
   }
+  prevScrollpos = currentScrollPos;
+  var distance = $('#second_nav').offset().top,
+    $window = $(window);
+  $window.scroll(function () {
+    if (window.pageYOffset > distance) {
+      $('#second_nav').addClass("second_nav_stick");
+      $('.tab_content_wrap').addClass("active");
+    } else if ($window.scrollTop() < distance) {
+      $('#second_nav').removeClass("second_nav_stick");
+      $('.tab_content_wrap').removeClass("active");
+    }
+  });
   // on scroll down hide top nav
 
   var flag = 0;
