@@ -108,11 +108,11 @@
                 <div class="col-12 px-1">
                   <p class="my-2">Equivalent Pay Rate (Min): $25/hr (Max): $30/hr <span class="ml-1 info_wrap"><img
                         src="./images/noun_Info_1845673.svg" alt="noun_Info_1845673"></span>
-                      <div class="got_it_wrap">
-                        <p><span>Note</span>: Per Hour rate is equivalent to Annual Salary / 2000 hrs</p>
-                        <button>Ok, got it</button>
-                      </div>
-                      </p>
+                    <div class="pay_info">
+                      <p><span>Note</span>: Per Hour rate is equivalent to Annual Salary / 2000 hrs</p>
+                      <button>Ok, got it</button>
+                    </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -136,5 +136,12 @@
 <script src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="./js/script.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".info_wrap").on("click", function () {
+      $(this).parent().siblings(".got_it_wrap, .pay_info").toggle();
+    })
+  })
+</script>
 
 </html>

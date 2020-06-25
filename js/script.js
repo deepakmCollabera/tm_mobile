@@ -185,7 +185,9 @@ $(document).ready(function () {
   })
 
   $(".info_wrap").on("click", function () {
-    $(this).parent().siblings(".got_it_wrap").toggle();
+    console.log("yes");
+    // $(this).parent().siblings(".got_it_wrap", ".pay_info").toggle();
+    console.log("yes1");
   })
 
   // selectlogo
