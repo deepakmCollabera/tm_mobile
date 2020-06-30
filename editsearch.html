@@ -37,21 +37,23 @@
             </a>
             <div class="status_check_wrap">
               Status:
-              <input type="checkbox" id="status_switch" class="status_switch" checked><label for="status_switch">Toggle</label>
+              <input type="checkbox" id="status_switch" class="status_switch" checked><label
+                for="status_switch">Toggle</label>
               <span class="current_status">Active</span>
               <span class="pl-3 info_popup"><img src="./images/info_icon.svg" alt="info_icon"></span>
               <div class="send_msg" id="unchecked_msg" style="display: none;">
-                  <span class="close_popup">&times;</span>
-                  <p class="mb-2">Please send a message to collabera representative to change your status
-                      to Active</p>
-                  <button class="btn_primary w-100">Send Message</button>
+                <span class="close_popup">&times;</span>
+                <p class="mb-2">Please send a message to collabera representative to change your status
+                  to Active</p>
+                <button class="btn_primary w-100">Send Message</button>
               </div>
               <div class="send_msg" id="checked_msg" style="display: none;">
                 <span class="close_popup">&times;</span>
-                <p class="mb-0">You are currently 
-                  Re-deployable consultant, you can always make yourself non-redeployable by toggling your status to inactive</p>
+                <p class="mb-0">You are currently
+                  Re-deployable consultant, you can always make yourself non-redeployable by toggling your status to
+                  inactive</p>
+              </div>
             </div>
-          </div>
           </li>
           <li class="nav-item"> <a class="nav-link arrow_right p-0" href="">
               <span class="mr-2">
@@ -383,7 +385,10 @@
     <div class="quick_actions_wrap">
       <div class="quick_actions_inner">
         <div class="text-right mb-2">
-          <span class="close_editsearch">&times;</span>
+          <div class="row m-0 align-items-center">
+            <h4 class="mb-0">Edit Search</h4>
+            <span class="close_editsearch ml-auto">&times;</span>
+          </div>
         </div>
         <form action="">
           <div class="form_group mb-2">

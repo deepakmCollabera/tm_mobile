@@ -279,6 +279,9 @@ body {
   display: flex;
   align-items: center;
 }
+.jobs_list_head.second_nav_stick{
+  padding-bottom: 14px;
+}
 .jobs_list_head h4 {
   font-size: 13px;
   text-transform: uppercase;
@@ -352,6 +355,12 @@ body {
   color: #9395a8;
   font-family: "Gotham-Medium";
   font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+.job_card_wrap .applied_tag img{
+  height: 11px;
 }
 .job_card_wrap .contact_wrap {
   font-size: 12px;
@@ -383,12 +392,13 @@ body {
 .quick_actions_inner .form_group input {
   background-color: #f4f7fa;
   border: none;
-  padding: 8px 10px;
+  padding: 12px 10px;
   font-size: 13px;
   font-family: "Gotham-Medium";
   width: 100%;
   outline: none;
   color: #4c5459;
+  border-radius: 4px;
 }
 .quick_actions_inner .form_group input::placeholder {
   color: #acaec1;
@@ -469,7 +479,7 @@ body {
   padding: 14px;
   border-radius: 2px;
   border: solid 1px #e0e2f0;
-  box-shadow: 0 -7px 21px 0 rgba(0, 0, 0, 0.23);
+  box-shadow: 0 -7px 21px 0 rgba(0, 0, 0, 0.03);
 }
 .progress_wrap_inner h4 {
   color: #232333;
@@ -978,15 +988,19 @@ a.arrow_right {
   padding: 14px 0 14px 14px;
 }
 .skills_tags > span {
-  font-size: 12px;
+  font-size: 11px;
   margin-right: 2px;
   color: #232333;
   font-family: "Gotham-Medium";
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
 }
 .skills_tags span > span {
   font-size: 14px;
-  line-height: 14px;
   font-family: "Gotham-Book";
+  margin-left: 7px;
+  line-height: 7px;
 }
 .job_skills_wrap input {
   width: 50% !important;
@@ -1037,16 +1051,16 @@ a.arrow_right {
 .myjobs_nav ul li {
   padding-bottom: 6px;
   color: #acaec1;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Gotham-Medium";
-  margin: 0 10px;
+  margin: 0 12px;
 }
 .myjobs_nav ul li:last-child {
   padding-right: 14px;
 }
 .myjobs_nav ul li.active {
   color: #4c5459;
-  border-bottom: 1px solid var(--theme_primary_color);
+  border-bottom: 3px solid var(--theme_primary_color);
 }
 .delete_btn {
   background-color: transparent;
@@ -1116,7 +1130,14 @@ a.arrow_right {
 .rejected_tag {
   color: #dd4040;
   font-family: "Gotham-Medium";
-  font-size: 12px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.rejected_tag img{
+  margin-right: 4px;
+  height: 11px;
 }
 /*  myjobs page ends */
 
@@ -1125,6 +1146,9 @@ a.arrow_right {
   padding: 62px 0 38px;
   min-height: 100%;
   background-color: #f4f7fa;
+}
+.jobdetails_wrapper .tabs_content{
+  padding: 0;
 }
 .jobdetail_topbar {
   padding: 14px;
@@ -1243,10 +1267,10 @@ a.arrow_right {
   padding: 8px 0 0;
   margin-right: 20px;
 }
-.jobdet_menu li.active {
-  /* border-bottom: 1px solid var(--theme_primary_color);
-  width: fit-content; */
-}
+/* .jobdet_menu li.active {
+  border-bottom: 3px solid var(--theme_primary_color);
+  padding-bottom: 6px;
+} */
 .jobdet_menu li a {
   color: #acaec1;
   font-size: 12px;
@@ -1345,7 +1369,7 @@ a.arrow_right {
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
   font-family: "Gotham-Medium";
   z-index: 99;
@@ -1622,7 +1646,7 @@ a.arrow_right {
   display: none;
 }
 .resume_tab_list ul li {
-  padding-right: 18px;
+  padding-right: 24px;
 }
 .resume_tab_list ul li:last-child {
   padding-right: 0;
@@ -1641,7 +1665,7 @@ a.arrow_right {
 }
 .resume_tab_list ul li.active a {
   color: #515468;
-  border-bottom: 1px solid var(--theme_primary_color);
+  border-bottom: 3px solid var(--theme_primary_color);
 }
 .tik_mark.active svg g#Candidate-Profile-Blank {
   fill: #73c82c;
@@ -1666,13 +1690,16 @@ a.arrow_right {
   font-family: "Gotham-Medium";
   color: #747588;
 }
+.myresume_wrapper .form_group input, .myresume_wrapper .form_group select, .myresume_wrapper .form_group textarea{
+  font-size: 12px;
+}
 .form_group input,
 .form_group select,
 .form_group textarea {
   background-color: #fff;
   border: 1px solid #9b9fa273;
-  padding: 4px 10px;
-  font-size: 12px;
+  padding: 8px 12px;
+  font-size: 14px;
   width: 100%;
   outline: none;
   border-radius: 2px;
@@ -1798,6 +1825,9 @@ a.arrow_right {
   position: absolute;
   right: 11px;
   top: 70%;
+}
+.addcontent_btn{
+  background-color: transparent;
 }
 /* my resume page ends  */
 
@@ -1935,7 +1965,7 @@ a.arrow_right {
   top: 18px;
   background-color: #fff;
   padding: 5px 10px 2px 15px;
-  box-shadow: 0 -5px 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 -5px 6px 0 rgba(0, 0, 0, 0.06);
   border: solid 1px #e7e3ce;
   z-index: 99;
   color: #515468;
@@ -2217,7 +2247,7 @@ a.arrow_right {
 }
 .bottom_button button {
   width: 100%;
-  padding: 8px;
+  padding: 12px;
   font-size: 14px;
   font-family: "Gotham-Medium";
   border-radius: 0;
@@ -2257,6 +2287,7 @@ a.arrow_right {
 .assessment_tab_list {
   padding: 14px 14px 8px;
   background-color: #fff;
+  border-bottom: 1px solid #e0e2f0;
 }
 .assessment_tab_list ul {
   display: flex;
@@ -2276,7 +2307,7 @@ a.arrow_right {
 }
 .assessment_tab_list li.active a {
   color: #515468;
-  border-bottom: 1px solid var(--theme_primary_color);
+  border-bottom: 3px solid var(--theme_primary_color);
 }
 .assess_tab_content {
   padding: 14px;
@@ -2338,21 +2369,21 @@ a.arrow_right {
   background-color: #fff;
   border-bottom: 1px solid #e0e2f0;
   position: relative;
-  margin-top: 4px;
 }
 .search_assess input {
   width: 100%;
   background-color: #f4f7fa;
   border: 1px solid #f6f6f6;
-  padding: 4px 10px 4px 30px;
+  padding: 8px 10px 8px 30px;
   font-size: 14px;
   outline: none;
+  border-radius: 4px;
 }
 .search_assess::before {
   content: url("../images/search_icon_grey.svg");
   position: absolute;
   left: 21px;
-  top: 35%;
+  top: 39%;
 }
 /* assessment page ends */
 
@@ -2458,7 +2489,7 @@ a.arrow_right {
   margin-top: 0;
 }
 .addskills_wrapper .search_assess input {
-  padding: 4px 10px;
+  padding: 8px 10px;
 }
 .addskills_wrapper .search_assess::before {
   content: none;
@@ -2486,7 +2517,7 @@ a.arrow_right {
   list-style: none;
 }
 .list_skills_inner ul li {
-  padding: 8px 10px;
+  padding: 14px 10px;
   border-bottom: 1px solid #e0e2f0;
 }
 .list_skills_inner ul li:last-child {
@@ -2499,6 +2530,7 @@ a.arrow_right {
   color: #515468;
   font-size: 14px;
   font-family: "Gotham-Medium";
+  line-height: 1;
 }
 .list_skills_inner ul li label .radio_check_wrap {
   margin-right: 10px;
@@ -2551,6 +2583,10 @@ a.arrow_right {
 }
 .modal-header {
   padding: 14px;
+}
+.modal-dialog{
+  top: 50%;
+  transform: translate(0, -50%) !important;
 }
 .modal-body {
   padding: 14px 14px 30px;
@@ -2725,9 +2761,13 @@ a.arrow_right {
   font-family: "Gotham-Medium";
   color: #02ba5a;
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 .shortlist_tag p img {
   max-width: 100%;
+  height: 12px;
+  margin-right: 4px;
 }
 .shortlist_tag h6 {
   margin-left: auto;

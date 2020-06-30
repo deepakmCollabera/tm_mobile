@@ -192,6 +192,7 @@ $(document).ready(function () {
 
   // selectlogo
   $(".selectlogo").on("click", function () {
+    console.log("print")
     $(this).toggleClass("active");
   })
   // selectlogo
