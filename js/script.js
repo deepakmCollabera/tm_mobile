@@ -185,14 +185,15 @@ $(document).ready(function () {
   })
 
   $(".info_wrap").on("click", function () {
-    console.log("yes");
+    // console.log("yes");
     // $(this).parent().siblings(".got_it_wrap", ".pay_info").toggle();
-    console.log("yes1");
+    $(this).children(".gotit_popup").toggle();
+    // console.log("yes1");
   })
 
   // selectlogo
   $(".selectlogo").on("click", function () {
-    console.log("print")
+    // console.log("print")
     $(this).toggleClass("active");
   })
   // selectlogo

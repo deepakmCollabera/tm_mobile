@@ -411,6 +411,7 @@ body {
   display: flex;
   align-items: center;
   background-color: #f4f7fa;
+  border-radius: 4px;
 }
 .quick_actions_inner .input_check_wrap > input {
   width: 60%;
@@ -423,6 +424,7 @@ body {
   margin-left: 2px;
   color: #4a4a4a;
   font-family: "Gotham-Book";
+  margin-right: 4px;
 }
 .quick_actions_inner .checkbox_wrap .checkbox_wrap_img {
   width: 16px;
@@ -431,6 +433,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  margin-left: auto;
 }
 .quick_actions_inner .checkbox_wrap input:checked ~ .checkbox_wrap_img {
   width: 16px;
@@ -1037,6 +1040,7 @@ a.arrow_right {
   background-color: #fff;
   z-index: 999;
   width: 100%;
+  padding-right: 10px;
 }
 .myjobs_nav ul {
   padding: 6px 7px 0;
@@ -1054,9 +1058,6 @@ a.arrow_right {
   font-size: 14px;
   font-family: "Gotham-Medium";
   margin: 0 12px;
-}
-.myjobs_nav ul li:last-child {
-  padding-right: 14px;
 }
 .myjobs_nav ul li.active {
   color: #4c5459;
@@ -1083,7 +1084,6 @@ a.arrow_right {
   font-family: "Gotham-Medium";
   margin-top: 14px;
   line-height: 26px;
-  letter-spacing: 1px;
 }
 .applied_tag {
   color: #02ba5a !important;
@@ -1568,7 +1568,7 @@ a.arrow_right {
 .login_inner_wrap button {
   width: 100%;
   font-size: 14px;
-  padding: 4px;
+  padding: 10px 12px;
   margin-top: 10px;
 }
 .login_inner_wrap .forget_paswrd {
@@ -1691,7 +1691,7 @@ a.arrow_right {
   color: #747588;
 }
 .myresume_wrapper .form_group input, .myresume_wrapper .form_group select, .myresume_wrapper .form_group textarea{
-  font-size: 12px;
+  font-size: 13px;
 }
 .form_group input,
 .form_group select,
@@ -2294,7 +2294,7 @@ a.arrow_right {
   list-style: none;
 }
 .assessment_tab_list li {
-  margin-right: 14px;
+  margin-right: 28px;
 }
 .assessment_tab_list li:last-child {
   margin-right: 0;
